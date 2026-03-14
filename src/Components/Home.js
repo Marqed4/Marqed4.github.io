@@ -1,6 +1,7 @@
 import "../Components/Home.js"
-import Navbar from "./Navbar"
+import Navbar from "./Navbar.js"
 import bannerbackground from "../Resources/art/Background Project/Orange Glob.png"
+// import bannerbackground from "../Resources/art/Background Project/Orange Glob Animations.mp4"
 
 const Home = () => {
   return ( 
