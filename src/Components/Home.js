@@ -2,7 +2,6 @@ import "../Components/Home.js"
 import Navbar from "./Navbar.js"
 import bannerbackground from "../Resources/art/Background Project/Orange Glob.gif"
 import { Gif } from "@mui/icons-material";
-import { useState, useRef } from "react";
 
 const Home = () => {
   return ( 
@@ -15,7 +14,7 @@ const Home = () => {
         <h1>Zachery</h1>
         <p>
         I'm a video editor and developer based out of New York. <br />
-        I make YouTube edits, montages, and build things on the web. <br />
+        I make YouTube edits, montages, mods, apps, websites, and more! <br />
         This is my corner of the internet — have a look around.
         </p>
       </div>
