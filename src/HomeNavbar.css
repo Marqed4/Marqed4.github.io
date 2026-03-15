@@ -33,16 +33,6 @@ nav {
   border-radius: 10px;
 }
 
-.Navbar-links-container a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  margin: 0 10px;
-  font-family: Latin;
-}
-
 .Navbar-links-container a:hover {
   color: #8400ff;
 }

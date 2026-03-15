@@ -15,9 +15,28 @@
 .home-name-text-container h1 {
   font-size: 3rem;
   margin-bottom: 0rem;
+  font-family: Latin;
+
+  display: inline-block;
+  animation: float 10.68s ease-in-out infinite;
 }
 
 .home-name-text-container p {
   font-size: 1.2rem;
   margin-top: 0rem;
+  font-family: 'Times New Roman', Times, serif;
+
+  animation: float 10s ease-in-out infinite;
 }
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+/* @keyframes float {
+  0%   { transform: translateY(0) rotate(0deg); }
+  50%  { transform: translateY(-8px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+} */
