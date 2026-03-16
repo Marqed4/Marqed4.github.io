@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.98d5483f.css",
-    "main.js": "/static/js/main.2c2b9667.js",
+    "main.css": "/static/css/main.be88028f.css",
+    "main.js": "/static/js/main.624e841e.js",
     "static/media/Orange Glob.gif": "/static/media/Orange Glob.a9c5deb75332fb8321d7.gif",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
@@ -11,11 +11,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.98d5483f.css.map": "/static/css/main.98d5483f.css.map",
-    "main.2c2b9667.js.map": "/static/js/main.2c2b9667.js.map"
+    "main.be88028f.css.map": "/static/css/main.be88028f.css.map",
+    "main.624e841e.js.map": "/static/js/main.624e841e.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d5483f.css",
-    "static/js/main.2c2b9667.js"
+    "static/css/main.be88028f.css",
+    "static/js/main.624e841e.js"
   ]
 }
