@@ -1,20 +1,27 @@
-.home-banner-container {
+.home-container {
   position: relative;
-  top: 0;
-  right: 0;
-  width: 65%;
-  height: 50vh;
-  z-index: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .home-banner-container {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70vh;
 }
 
-.home-banner-container img {
-  width: 100%;
-  height: 75%;
-  object-fit: scale-down;
-  object-position: right center;
+
+@media (max-width: 375px) {
+  .home-container {
+    width: 80%;
+  }
 }
+
+@media (max-width: 768px) {
+  .home-banner-container {
+    width: 100;
+  }
+}
+
+/* 855 */

@@ -21,7 +21,13 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0 auto;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .Navbar-links-container {
+    display: none;
+  }
 }
 
 .nav-logo-contianer img {
@@ -31,6 +37,12 @@ nav {
   object-fit: cover;
   border: #f0a500;
   border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .Navbar-logo-container {
+    display: none;
+  }
 }
 
 .Navbar-links-container a:hover {
@@ -78,7 +90,7 @@ nav {
   text-decoration: none;
   color: black;
   font-size: 22px;
-  margin: 0 10px;
+  margin: 10px;
   font-family: "Latin";
   text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
 
@@ -96,4 +108,11 @@ nav {
   height: 35px;
   vertical-align: middle;
   margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+  .Navbar-links-container a {
+    font-size: 22px;
+    margin: 5px;
+  }
 }
