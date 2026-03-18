@@ -13,13 +13,6 @@ const DemandsSection = () => {
         demandsRefAudio.current.volume = 0.05;
     }, []);
 
-        const handleResize = () => {
-        if (window.innerWidth <= 390 && isPlaying) {
-            demandsRefAudio.current.volume = 0.01;
-            setIsPlaying(false);
-        }
-    };
-
     const handlePlay = () => {
         if (isLoading) return;
         
