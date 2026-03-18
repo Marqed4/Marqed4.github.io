@@ -39,3 +39,9 @@
   50%  { transform: translateY(-6px); }
   100% { transform: translateY(0); }
 }
+
+@media (max-width: 498px) {
+  .home-name-text-container {
+    height: 20%;
+  }
+}

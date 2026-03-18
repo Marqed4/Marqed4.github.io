@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../Resources/art/Profile.jpg"
+// import Logo from "../Resources/art/Profile.jpg"
+import Logo from "../Resources/art/Marqed 250.ico"
 import GospelAudio from "../Resources/sound/Gospel.mp3"; // "Yves Tumor - Gospel For A New Century"
 import SpellAudio from "../Resources/sound/Spell.mp3"; // "Snow Strippers - Under Your Spell"
 import LeniAudio from "../Resources/sound/Leni.mp3"; // "Crystal Castles - Leni"
