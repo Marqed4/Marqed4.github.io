@@ -14,6 +14,8 @@ const DemandsSection = () => {
         demandsRefAudio.current.volume = 0.00;
     }, []);
 
+    const GIF_DURATION = 18006;
+
     const handlePlay = () => {
         if (isLoading) return;
         
@@ -25,9 +27,13 @@ const DemandsSection = () => {
             demandsRefAudio.current.play().then(() => {
                 setIsPlaying(true);
                 setIsLoading(false);
-            }).catch((err) => {
-                console.log("error:", err);
-                setIsLoading(false);
+                setTimeout(() => {
+                demandsRefAudio.current.volume = 0.00;
+                setIsPlaying(false);
+            }, GIF_DURATION);
+        }).catch((err) => {
+            console.log("error:", err);
+            setIsLoading(false);
             });
         } else {
             demandsRefAudio.current.volume = 0.00;
