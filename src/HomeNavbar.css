@@ -115,3 +115,45 @@ nav {
     margin: 5px;
   }
 }
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-left: auto;
+  width: 70px;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Latin";
+  font-size: 18px;
+  text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
+}
+
+.mobile-menu a:hover {
+  color: #8400ff;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}

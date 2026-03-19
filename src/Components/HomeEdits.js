@@ -49,7 +49,7 @@ const DemandsSection = () => {
         </div>
         <div className = "Demands-play-button-container">
             <button className = "play-button" onClick = {handlePlay}>
-                {isPlaying ? "Pause" : "Play"}
+                {isPlaying ? "Stop" : "Play"}
             </button>
         </div>
     </>
