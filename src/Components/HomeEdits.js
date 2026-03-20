@@ -1,58 +1,42 @@
-import { useRef, useState, useEffect } from "react"
-import DemandsVideoPreview from "../Resources/art/Background Project/Demands Video Preview.gif"
-import DemandsVideoPreviewAudio from "../Resources/art/Background Project/Demands Video Preview Audio.mp3"
+import { useRef, useState } from "react"
+import DemandsVideoPreview from "../Resources/art/Background Project/Demands.webm"
 
 const DemandsSection = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const [isLoading, setIsLoading] = useState(false);
     const [gifKey, setGifKey] = useState(0);
-    const demandsRefAudio = useRef(null);
-
-    useEffect(() => {
-        demandsRefAudio.current = new Audio(DemandsVideoPreviewAudio);
-        demandsRefAudio.current.loop = true;
-        demandsRefAudio.current.volume = 0.00;
-    }, []);
-
-    const GIF_DURATION = 18006;
+    const DemandsRef = useRef(null);
 
     const handlePlay = () => {
-        if (isLoading) return;
-        
-        setIsLoading(true);
         if (!isPlaying) {
             setGifKey(prev => prev + 1);
-            demandsRefAudio.current.currentTime = 0;
-            demandsRefAudio.current.volume = 0.05;
-            demandsRefAudio.current.play().then(() => {
-                setIsPlaying(true);
-                setIsLoading(false);
-                setTimeout(() => {
-                demandsRefAudio.current.volume = 0.00;
-                setIsPlaying(false);
-            }, GIF_DURATION);
-        }).catch((err) => {
-            console.log("error:", err);
-            setIsLoading(false);
-            });
+            setIsPlaying(true);
         } else {
-            demandsRefAudio.current.volume = 0.00;
+            DemandsRef.current?.pause();
             setIsPlaying(false);
-            setIsLoading(false);
-        } 
+        }
     };
 
     return (
-    <>
-        <div className = "Demands-gif-and-sound-logic-section">
-            {isPlaying && <img key={gifKey} src={`${DemandsVideoPreview}?v=${gifKey}`} alt="Demands-preview"/>}
-        </div>
-        <div className = "Demands-play-button-container">
-            <button className = "play-button" onClick = {handlePlay}>
-                {isPlaying ? "Stop" : "Play"}
-            </button>
-        </div>
-    </>
+        <>
+            <div className="Demands-gif-and-sound-logic-section">
+                {isPlaying && (
+                    <video
+                        key={gifKey}
+                        ref={DemandsRef}
+                        src={DemandsVideoPreview}
+                        autoPlay
+                        playsInline
+                        onPlay={() => DemandsRef.current.volume = 0.05}
+                        onEnded={() => setIsPlaying(false)}
+                    />
+                )}
+            </div>
+            <div className="Demands-play-button-container">
+                <button className="play-button" onClick={handlePlay}>
+                    {isPlaying ? "Stop" : "Preview Demands 🎥"}
+                </button>
+            </div>
+        </>
     );
 };
 

@@ -23,12 +23,14 @@ const Details = () => {
         <div className="details-layout">
           <h2 className="details-interests-header">Interests</h2>
           <p>
-            I love creating video edits that radiate pure swagger.
-            The kind of energy that turns simple clips into something alive.
-            I pull inspiration from standout editors who bring culture and
-            personality into gameplay and everyday moments.
-            For me, developing/editing is both expression and utility!
-            I enjoy building projects that feel good to make and serve a purpose.
+            I love creating video edits that radiate high skill energy and creative vision.
+            The kind of energy that turns a great clips into an iconic moment.
+            <br/><br/>
+            For me, developing & editing is an expression of the wold I'd like to live in. 
+            It's more than just utility! 
+            <br/><br/>
+            It feels good to build projects that serve a purpose. 
+            It's energizing to build projects that referencable.
             Technology comes naturally because it's the toolset that lets me shape ideas,
             refine my style, and show real expertise through the work I put out.
           </p>

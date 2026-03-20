@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef} from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Resources/art/Marqed 250.ico"
 import GospelAudio from "../Resources/sound/Gospel.mp3";
@@ -18,13 +18,19 @@ const Navbar = () => {
   const OnlinePersonaRef = useRef(null)
   const isPlayingRef = useRef(false);
 
-  useEffect(() => {
-    return () => {
-      stopHoverAudio();
-    };
-  }, []);
+
+  const stopHoverAudio = () => {
+    [SpellRef, GospelRef, LeniRef, OnlinePersonaRef].forEach(ref => {
+      if (ref.current) {
+        ref.current.pause();
+        ref.current.currentTime = 0;
+      }
+    });
+    isPlayingRef.current = false;
+  };
 
   const playOnlinePersona = () => {
+    stopHoverAudio();
     OnlinePersonaRef.current = new Audio(OnlinePersonaAudio);
     OnlinePersonaRef.current.volume = 0.05;
     OnlinePersonaRef.current.play().then(() => {
@@ -33,6 +39,7 @@ const Navbar = () => {
   };
 
   const playGospel = () => {
+    stopHoverAudio();
     GospelRef.current = new Audio(GospelAudio);
     GospelRef.current.volume = 0.05;
     GospelRef.current.play().then(() => {
@@ -41,6 +48,7 @@ const Navbar = () => {
   };
 
   const playSpell = () => {
+    stopHoverAudio();
     SpellRef.current = new Audio(SpellAudio);
     SpellRef.current.volume = 0.03;
     SpellRef.current.play().then(() => {
@@ -49,30 +57,12 @@ const Navbar = () => {
   };
 
   const playLeni = () => {
+    stopHoverAudio();
     LeniRef.current = new Audio(LeniAudio);
     LeniRef.current.volume = 0.03;
     LeniRef.current.play().then(() => {
       isPlayingRef.current = true;
     }).catch((err) => { console.log("Audio play failed:", err); });
-  };
-
-  const stopHoverAudio = () => {
-    if (SpellRef.current && isPlayingRef.current) {
-      SpellRef.current.pause();
-      SpellRef.current.currentTime = 0;
-    }
-    if (OnlinePersonaRef.current && isPlayingRef.current) {
-      OnlinePersonaRef.current.pause();
-      OnlinePersonaRef.current.currentTime = 0;
-    }
-    if (LeniRef.current && isPlayingRef.current) {
-      LeniRef.current.pause();
-      LeniRef.current.currentTime = 0;
-    }
-    if (GospelRef.current && isPlayingRef.current) {
-      GospelRef.current.pause();
-      GospelRef.current.currentTime = 0;
-    }
   };
 
   return (
@@ -81,7 +71,7 @@ const Navbar = () => {
         <img src={Logo} alt=""/>
       </div>
 
-      {/* Desktop links */}
+      {/* The Desktop Menu */}
       <div className="Navbar-links-container">
         <a href="/" onMouseEnter={playGospel} onMouseLeave={stopHoverAudio}>
           Home <img src={HomeIcon} alt="Home" className="home-link-icon"/>
@@ -108,10 +98,10 @@ const Navbar = () => {
         ☰
       </div>
 
-      {/* Mobile dropdown */}
+      {/* The Dropdown Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <a href="" onClick={() => setMenuOpen(false)}>
+          <a href = "/" onClick={() => setMenuOpen(false)}>
             Home <img src={HomeIcon} alt="Home" className="home-link-icon"/>
           </a>
           <Link to="/details" onClick={() => setMenuOpen(false)}>

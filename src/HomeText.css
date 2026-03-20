@@ -17,6 +17,17 @@
   justify-content: space-evenly;
 }
 
+.home-layout {
+  background-image: url('./Resources/art/Background Project/Orange Marble Gradient.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 50px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .home-name-text-container h1 {
   font-size: 3rem;
   margin-bottom: 0rem;
@@ -43,5 +54,22 @@
 @media (max-width: 498px) {
   .home-name-text-container {
     height: 20%;
+  }
+}
+
+.home-name-text-container {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  z-index: 1;
+  max-width: 50%;
+}
+
+@media (max-width: 375px) {
+  .home-name-text-container {
+    max-width: 100%;
+    top: 10%;
+    left: 5%;
+    right: 5%;
   }
 }
