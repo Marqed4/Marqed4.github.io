@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0dda8f5d.css",
-    "main.js": "/static/js/main.fc682d63.js",
+    "main.css": "/static/css/main.327bbcf3.css",
+    "main.js": "/static/js/main.0df50179.js",
+    "static/media/Secular.webm": "/static/media/Secular.9ff1691b4457f5f40e3a.webm",
     "static/media/Orange Glob.gif": "/static/media/Orange Glob.5b7a08df1dbdce162d76.gif",
     "static/media/Demands.webm": "/static/media/Demands.2e4fcff89260eb2c71f6.webm",
     "static/media/Orange Marble Gradient.gif": "/static/media/Orange Marble Gradient.77a1c28da9473227cc2c.gif",
@@ -9,15 +10,17 @@
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
     "static/media/Leni.mp3": "/static/media/Leni.cb37632fdd903dca91e1.mp3",
     "static/media/OnlinePersona.mp3": "/static/media/OnlinePersona.bc15bbaf551e258353ac.mp3",
+    "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
+    "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
     "static/media/Marqed 250.ico": "/static/media/Marqed 250.fc12f464358e7141b655.ico",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.0dda8f5d.css.map": "/static/css/main.0dda8f5d.css.map",
-    "main.fc682d63.js.map": "/static/js/main.fc682d63.js.map"
+    "main.327bbcf3.css.map": "/static/css/main.327bbcf3.css.map",
+    "main.0df50179.js.map": "/static/js/main.0df50179.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dda8f5d.css",
-    "static/js/main.fc682d63.js"
+    "static/css/main.327bbcf3.css",
+    "static/js/main.0df50179.js"
   ]
 }
