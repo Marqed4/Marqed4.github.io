@@ -94,24 +94,24 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger icon - only shows on small screens like iphone*/}
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+      <div className = "hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         ☰
       </div>
 
       {/* The Dropdown Menu */}
       {menuOpen && (
-        <div className="mobile-menu">
+        <div className = "mobile-menu">
           <a href = "/" onClick={() => setMenuOpen(false)}>
-            Home <img src={HomeIcon} alt="Home" className="home-link-icon"/>
+            Home <img src = {HomeIcon} alt = "Home" className="home-link-icon"/>
           </a>
-          <Link to="/details" onClick={() => setMenuOpen(false)}>
-            Details <img src={DetailsIcon} alt="Details" className="details-link-icon"/>
+          <Link to = "/details" onClick={() => setMenuOpen(false)}>
+            Details <img src = {DetailsIcon} alt = "Details" className="details-link-icon"/>
           </Link>
-          <a href="https://www.youtube.com/Marqed" onClick={() => setMenuOpen(false)}>
-            YouTube <img src={YoutubeIcon} alt="YouTube" className="youtube-link-icon"/>
+          <a href="https://www.youtube.com/Marqed" onClick = {() => setMenuOpen(false)}>
+            YouTube <img src = {YoutubeIcon} alt = "YouTube" className = "youtube-link-icon"/>
           </a>
-          <a href="https://github.com/Marqed4" onClick={() => setMenuOpen(false)}>
-            GitHub <img src={GitHubIcon} alt="GitHub" className="github-link-icon"/>
+          <a href="https://github.com/Marqed4" onClick = {() => setMenuOpen(false)}>
+            GitHub <img src = {GitHubIcon} alt = "GitHub" className = "github-link-icon"/>
           </a>
         </div>
       )}
