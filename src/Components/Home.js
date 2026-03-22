@@ -1,17 +1,19 @@
-import bannerbackground from "../Resources/art/Background Project/Orange Glob.gif"
+import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob.gif"
 import Navbar from "./Navbar.js"
 import HomeEdits from "./HomeEdits.js"
+import HomeShorts from "./HomeShorts.js"
 
 
 const Home = () => {
   return ( 
     <>
+
       <div className = "home-container">
         <Navbar/>
         <div className = "home-banner-container">
           <img src = {bannerbackground} alt = "" />
         </div>
-        <div className = "home-layout" />  {/* backdrop only, no children */}
+        <div className = "home-layout" />
         <div className = "home-name-text-container">
           <h1>Hey, I'm Zachery/Marqed</h1>
           <p>
@@ -22,8 +24,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className = "EditsPreviewContainer">
-        <HomeEdits/>
+      <div className = "HomePageMediaPreviews">
+        <div className = "EditsPreviewContainer">
+          <HomeEdits/>
+        </div>
+
+        <div className = "ShortsPreviewContainer">
+          <HomeShorts/>
+        </div>
       </div>
     </>
   );

@@ -31,13 +31,38 @@
   padding: 20px;
 }
 
-.details-layout {
-  background-image: url('./Resources/art/Background Project/Orange Marble Gradient.gif');
+.details-layout-edu {
+  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 200px;
+  max-height: 175px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-layout-int {
+  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
   background-size: cover;
   background-position: center;
   border-radius: 15px;
   padding: 40px 30px;
   max-width: 300px;
+  max-height: 435px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-layout-skills {
+  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 200px;
+  max-height: 540px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -55,7 +80,8 @@
 }
 
 .details-education-header,
-.details-interests-header {
+.details-interests-header,
+.details-skills-header {
   font-family: "Latin";
   font-size: 2rem;
   text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
@@ -64,8 +90,15 @@
 }
 
 .details-education,
-.details-interests {
+.details-interests,
+.details-skill {
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   line-height: 1.8;
+}
+
+.education-and-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

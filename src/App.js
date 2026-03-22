@@ -7,7 +7,9 @@ import './HomeBanner.css';
 import './HomeText.css';
 import './YouTubeDropdown.css';
 import './Details.css';
-import './HomeEdit.css';
+import './HomeEditsShorts.css';
+import './HomeEdits.css';
+import './HomeShorts.css';
 import Home from "./Components/Home";
 
 // <---- Details Page ---->

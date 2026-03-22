@@ -7,20 +7,38 @@ const Details = () => {
       <h1 className="details-header">Details</h1>
 
       <div className="details-content">
+        <div className = "education-and-skills">
+          <div className="details-layout-edu">
+            <h2 className="details-education-header">Education</h2>
+            <p>
+              Kingsborough Community College<br/>
+              • A.A. in Liberal Arts
+            </p>
+            <p>
+              Brooklyn College<br/>
+              • B.S. in Information Systems
+            </p>
+          </div>
 
-        <div className="details-layout">
-          <h2 className="details-education-header">Education</h2>
-          <p>
-            Kingsborough Community College <br/>
-            • A.A. in Liberal Arts
-          </p>
-          <p>
-            Brooklyn College <br/>
-            • B.S. in Information Systems
-          </p>
+          <div className="details-layout-skills">
+            <h2 className="details-skills-header">Editing Softwares</h2>
+            <p>
+              • Adobe After Effects<br/>
+              • Adobe Premiere Pro<br/>
+              • Adobe Media Encoder<br/>
+              • Sony Vegas Pro<br/>
+            </p>
+            <h2 className="details-skills-header">Coding Languages/ Frameworks</h2>
+            <p>
+              • Java / Oracle JDK 25<br/>
+              • C# / Microsoft Dotnet 9.0<br/>
+              • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
+              • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
+            </p>
+          </div>
         </div>
 
-        <div className="details-layout">
+        <div className="details-layout-int">
           <h2 className="details-interests-header">Interests</h2>
           <p>
             I love creating video edits that radiate an elevated sense of skill and creative vision.
@@ -36,7 +54,6 @@ const Details = () => {
             It feels amazing to build projects, to service a purpose, or reveal new ones.
           </p>
         </div>
-
       </div>
     </div>
   );
