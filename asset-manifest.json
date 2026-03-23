@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c9aba07b.css",
-    "main.js": "/static/js/main.297fc926.js",
+    "main.css": "/static/css/main.eba35ff7.css",
+    "main.js": "/static/js/main.e858e9d3.js",
     "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
     "static/media/Orange Glob.gif": "/static/media/Orange Glob.5b7a08df1dbdce162d76.gif",
     "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
@@ -17,11 +17,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.c9aba07b.css.map": "/static/css/main.c9aba07b.css.map",
-    "main.297fc926.js.map": "/static/js/main.297fc926.js.map"
+    "main.eba35ff7.css.map": "/static/css/main.eba35ff7.css.map",
+    "main.e858e9d3.js.map": "/static/js/main.e858e9d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9aba07b.css",
-    "static/js/main.297fc926.js"
+    "static/css/main.eba35ff7.css",
+    "static/js/main.e858e9d3.js"
   ]
 }
