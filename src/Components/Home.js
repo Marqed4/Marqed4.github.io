@@ -17,7 +17,7 @@ const Home = () => {
         <div className = "home-name-text-container">
           <h1>Hey, I'm Zachery/Marqed</h1>
           <p>
-            Video editor, content creator and developer based out of Brooklyn, New York. <br />
+            Content creator and developer based out of Brooklyn, New York. <br />
             I make YouTube edits, shorts, mods, apps, websites, and much more! <br />
             This is my corner of the internet — have a look around.
           </p>

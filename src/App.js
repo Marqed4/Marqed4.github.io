@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // <---- Landing Page ---->
 import './HomeNavbar.css';
@@ -17,12 +17,10 @@ import Details from "./Components/Details";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="details" element={<Details />} />
+    </Routes>
   );
 }
 
