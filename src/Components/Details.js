@@ -11,12 +11,12 @@ const Details = () => {
           <div className="details-layout-edu">
             <h2 className="details-education-header">Education</h2>
             <p>
-              Kingsborough Community College<br/>
-              • A.A. in Liberal Arts
-            </p>
-            <p>
               Brooklyn College<br/>
               • B.S. in Information Systems
+            </p>
+            <p>
+              Kingsborough Community College<br/>
+              • A.A. in Liberal Arts
             </p>
           </div>
 
@@ -30,7 +30,7 @@ const Details = () => {
             </p>
             <h2 className="details-skills-header">Coding Languages/ Frameworks</h2>
             <p>
-              • Java / Oracle JDK 25<br/>
+              • Java / Oracle JDK 23/25<br/>
               • C# / Microsoft Dotnet 9.0<br/>
               • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
               • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
