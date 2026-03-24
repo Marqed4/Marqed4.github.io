@@ -3,6 +3,8 @@ import DemandsVideoPreview from "../Resources/art/Edits/Demands/Demands.webm"
 import DemandsThumbnail from "../Resources/art/Edits/Demands/Demands.jpg"
 import SecularVideoPreview from "../Resources/art/Edits/Secular/Secular.webm"
 import SecularThumbnail from "../Resources/art/Edits/Secular/Secular.jpg"
+import AffirmationsVideoPreview from "../Resources/art/Edits/Affirmations/Affirmations.webm"
+import AffirmationsThumbnail from "../Resources/art/Edits/Affirmations/Affirmations.jpg"
 
 const EditsList = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +13,7 @@ const EditsList = () => {
     const videos = [
         { label: "Demands", src: DemandsVideoPreview, thumbnail: DemandsThumbnail },
         { label: "Secular", src: SecularVideoPreview, thumbnail: SecularThumbnail },
+        { label: "Affirmations", src: AffirmationsVideoPreview, thumbnail: AffirmationsThumbnail },
     ];
 
     return (
