@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.eba35ff7.css",
-    "main.js": "/static/js/main.881a0c5e.js",
+    "main.js": "/static/js/main.8f62ebb2.js",
+    "static/media/Affirmations.webm": "/static/media/Affirmations.8270aba0a0c40e537fc1.webm",
     "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
     "static/media/Orange Glob.gif": "/static/media/Orange Glob.5b7a08df1dbdce162d76.gif",
     "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
@@ -11,6 +12,7 @@
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
     "static/media/Leni.mp3": "/static/media/Leni.cb37632fdd903dca91e1.mp3",
     "static/media/OnlinePersona.mp3": "/static/media/OnlinePersona.bc15bbaf551e258353ac.mp3",
+    "static/media/Affirmations.jpg": "/static/media/Affirmations.f199e5f8d7967955224f.jpg",
     "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
     "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
     "static/media/Marqed 250.ico": "/static/media/Marqed 250.fc12f464358e7141b655.ico",
@@ -18,10 +20,10 @@
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
     "main.eba35ff7.css.map": "/static/css/main.eba35ff7.css.map",
-    "main.881a0c5e.js.map": "/static/js/main.881a0c5e.js.map"
+    "main.8f62ebb2.js.map": "/static/js/main.8f62ebb2.js.map"
   },
   "entrypoints": [
     "static/css/main.eba35ff7.css",
-    "static/js/main.881a0c5e.js"
+    "static/js/main.8f62ebb2.js"
   ]
 }
