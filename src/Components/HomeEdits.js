@@ -1,4 +1,4 @@
-import { useRef, useState } from "react"
+import { useState } from "react"
 import DemandsVideoPreview from "../Resources/art/Edits/Demands/Demands.webm"
 import DemandsThumbnail from "../Resources/art/Edits/Demands/Demands.jpg"
 import SecularVideoPreview from "../Resources/art/Edits/Secular/Secular.webm"
