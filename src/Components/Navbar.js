@@ -10,7 +10,8 @@ import DetailsIcon from "../Resources/art/Details.png";
 import YoutubeIcon from "../Resources/art/Youtube.png";
 import GitHubIcon from "../Resources/art/GitHub.png";
 
-const Navbar = () => {
+const Navbar = () => 
+{
   const [menuOpen, setMenuOpen] = useState(false);
   const SpellRef = useRef(null)
   const GospelRef = useRef(null)
@@ -19,8 +20,10 @@ const Navbar = () => {
   const isPlayingRef = useRef(false);
 
 
-  const stopHoverAudio = () => {
-    [SpellRef, GospelRef, LeniRef, OnlinePersonaRef].forEach(ref => {
+  const stopHoverAudio = () => 
+  {
+    [SpellRef, GospelRef, LeniRef, OnlinePersonaRef].forEach(ref => 
+    {
       if (ref.current) {
         ref.current.pause();
         ref.current.currentTime = 0;
@@ -29,38 +32,46 @@ const Navbar = () => {
     isPlayingRef.current = false;
   };
 
-  const playOnlinePersona = () => {
+  const playOnlinePersona = () => 
+  {
     stopHoverAudio();
     OnlinePersonaRef.current = new Audio(OnlinePersonaAudio);
     OnlinePersonaRef.current.volume = 0.05;
-    OnlinePersonaRef.current.play().then(() => {
+    OnlinePersonaRef.current.play().then(() => 
+    {
       isPlayingRef.current = true;
     }).catch((err) => { console.log("Audio play failed:", err); });
   };
 
-  const playGospel = () => {
+  const playGospel = () => 
+  {
     stopHoverAudio();
     GospelRef.current = new Audio(GospelAudio);
     GospelRef.current.volume = 0.05;
-    GospelRef.current.play().then(() => {
+    GospelRef.current.play().then(() => 
+    {
       isPlayingRef.current = true;
     }).catch((err) => { console.log("Audio play failed:", err); });
   };
 
-  const playSpell = () => {
+  const playSpell = () => 
+  {
     stopHoverAudio();
     SpellRef.current = new Audio(SpellAudio);
     SpellRef.current.volume = 0.03;
-    SpellRef.current.play().then(() => {
+    SpellRef.current.play().then(() => 
+    {
       isPlayingRef.current = true;
     }).catch((err) => { console.log("Audio play failed:", err); });
   };
 
-  const playLeni = () => {
+  const playLeni = () => 
+  {
     stopHoverAudio();
     LeniRef.current = new Audio(LeniAudio);
     LeniRef.current.volume = 0.03;
-    LeniRef.current.play().then(() => {
+    LeniRef.current.play().then(() => 
+    {
       isPlayingRef.current = true;
     }).catch((err) => { console.log("Audio play failed:", err); });
   };

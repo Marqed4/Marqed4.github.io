@@ -6,7 +6,6 @@ import './HomeBody.css';
 import './HomeBanner.css';
 import './HomeText.css';
 import './YouTubeDropdown.css';
-import './Details.css';
 import './HomeEditsShorts.css';
 import './HomeEdits.css';
 import './HomeShorts.css';
@@ -14,14 +13,15 @@ import Home from "./Components/Home";
 
 // <---- Details Page ---->
 import Details from "./Components/Details";
+import './Details.css';
 
-function App() {
+const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="details" element={<Details />} />
     </Routes>
   );
-}
+};
 
 export default App;

@@ -5,6 +5,8 @@ import SecularVideoPreview from "../Resources/art/Edits/Secular/Secular.webm"
 import SecularThumbnail from "../Resources/art/Edits/Secular/Secular.jpg"
 import AffirmationsVideoPreview from "../Resources/art/Edits/Affirmations/Affirmations.webm"
 import AffirmationsThumbnail from "../Resources/art/Edits/Affirmations/Affirmations.jpg"
+import BubbleSliceVideoPreview from "../Resources/art/Edits/BubbleSlice/BubbleSlice.webm"
+import BubbleSliceThumbnail from "../Resources/art/Edits/BubbleSlice/BubbleSlice.jpg"
 
 const EditsList = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +16,7 @@ const EditsList = () => {
         { label: "Demands", src: DemandsVideoPreview, thumbnail: DemandsThumbnail },
         { label: "Secular", src: SecularVideoPreview, thumbnail: SecularThumbnail },
         { label: "Affirmations", src: AffirmationsVideoPreview, thumbnail: AffirmationsThumbnail },
+        { label: "Bubble Slice", src: BubbleSliceVideoPreview, thumbnail: BubbleSliceThumbnail },
     ];
 
     return (
@@ -26,8 +29,7 @@ const EditsList = () => {
                     {isOpen ? "▲ Hide Edits" : "▼ Show Edits"}
                 </button>
 
-                {isOpen && (
-                    <div className = "dropdown-list-edits">
+                <div className={`dropdown-list-edits ${isOpen ? "open" : ""}`}>
                         {videos.map((video) => (
                             <div
                                 key = {video.label}
@@ -38,7 +40,6 @@ const EditsList = () => {
                             </div>
                         ))}
                     </div>
-                )}
             </div>
 
             <div className = "EditsWindow">

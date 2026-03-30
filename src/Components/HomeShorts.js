@@ -20,8 +20,7 @@ const ShortsList = () => {
                     {isOpen ? "▲ Hide Shorts" : "▼ Show Shorts"}
                 </button>
 
-                {isOpen && (
-                    <div className = "dropdown-list-shorts">
+                <div className={`dropdown-list-edits ${isOpen ? "open" : ""}`}>
                         {shorts.map((video) => (
                             <div
                                 key = {video.label}
@@ -32,7 +31,6 @@ const ShortsList = () => {
                             </div>
                         ))}
                     </div>
-                )}
             </div>
 
             <div className = "ShortsWindow">
