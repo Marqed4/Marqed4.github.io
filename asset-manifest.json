@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.eba35ff7.css",
-    "main.js": "/static/js/main.8f62ebb2.js",
-    "static/media/Affirmations.webm": "/static/media/Affirmations.8270aba0a0c40e537fc1.webm",
+    "main.css": "/static/css/main.8a300ac2.css",
+    "main.js": "/static/js/main.46863c11.js",
+    "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
     "static/media/Orange Glob.gif": "/static/media/Orange Glob.5b7a08df1dbdce162d76.gif",
     "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
+    "static/media/BubbleSlice.webm": "/static/media/BubbleSlice.6db8aad250ea0028bcce.webm",
     "static/media/Orange Marble Gradient.gif": "/static/media/Orange Marble Gradient.ce55b1ef20540ab72dbf.gif",
     "static/media/MDR Labs Grooving.mp4": "/static/media/MDR Labs Grooving.d5f01a0387caadcdf4f8.mp4",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
@@ -16,14 +17,15 @@
     "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
     "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
     "static/media/Marqed 250.ico": "/static/media/Marqed 250.fc12f464358e7141b655.ico",
+    "static/media/BubbleSlice.jpg": "/static/media/BubbleSlice.8bae4a9720fb400905cd.jpg",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.eba35ff7.css.map": "/static/css/main.eba35ff7.css.map",
-    "main.8f62ebb2.js.map": "/static/js/main.8f62ebb2.js.map"
+    "main.8a300ac2.css.map": "/static/css/main.8a300ac2.css.map",
+    "main.46863c11.js.map": "/static/js/main.46863c11.js.map"
   },
   "entrypoints": [
-    "static/css/main.eba35ff7.css",
-    "static/js/main.8f62ebb2.js"
+    "static/css/main.8a300ac2.css",
+    "static/js/main.46863c11.js"
   ]
 }
