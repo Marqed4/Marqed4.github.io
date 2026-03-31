@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a300ac2.css",
-    "main.js": "/static/js/main.46863c11.js",
+    "main.css": "/static/css/main.601e0971.css",
+    "main.js": "/static/js/main.c0e01962.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
+    "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.2d8d691dfebf3a8a0bec.gif",
     "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
-    "static/media/Orange Glob.gif": "/static/media/Orange Glob.5b7a08df1dbdce162d76.gif",
     "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
     "static/media/BubbleSlice.webm": "/static/media/BubbleSlice.6db8aad250ea0028bcce.webm",
     "static/media/Orange Marble Gradient.gif": "/static/media/Orange Marble Gradient.ce55b1ef20540ab72dbf.gif",
@@ -21,11 +21,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.8a300ac2.css.map": "/static/css/main.8a300ac2.css.map",
-    "main.46863c11.js.map": "/static/js/main.46863c11.js.map"
+    "main.601e0971.css.map": "/static/css/main.601e0971.css.map",
+    "main.c0e01962.js.map": "/static/js/main.c0e01962.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a300ac2.css",
-    "static/js/main.46863c11.js"
+    "static/css/main.601e0971.css",
+    "static/js/main.c0e01962.js"
   ]
 }
