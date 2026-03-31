@@ -1,4 +1,5 @@
 import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob Marble.gif"
+import introheader from "../Resources/art/Background Project/Gradients/Name Header.gif"
 import Navbar from "./Navbar.js"
 import HomeEdits from "./HomeEdits.js"
 import HomeShorts from "./HomeShorts.js"
@@ -14,7 +15,11 @@ const Home = () => {
         </div>
         <div className = "home-layout" />
         <div className = "home-name-text-container">
-          <h1>Hey, I'm Zachery/Marqed</h1>
+          <img 
+            src = {introheader}
+            alt="Hey, I'm Zachery / Marqed"
+            className = "intro-header"
+          />
           <p>
             Content creator and developer based out of Brooklyn, New York. <br />
             I make YouTube edits, shorts, mods, apps, websites, and much more! <br />

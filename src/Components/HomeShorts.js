@@ -1,13 +1,13 @@
-import { useRef, useState } from "react"
-import MDRLAbsGroovingVideoPreview from "../Resources/art/Shorts/MDR Labs Grooving/MDR Labs Grooving.mp4"
-import MDRLAbsGroovingThumbnail from "../Resources/art/Shorts/MDR Labs Grooving/MDR Labs Grooving.jpg"
+import { useState } from "react"
+import MDRLabsGroovingVideoPreview from "../Resources/art/Shorts/MDR Labs Grooving/MDR Labs Grooving.mp4"
+import MDRLabsGroovingThumbnail from "../Resources/art/Shorts/MDR Labs Grooving/MDR Labs Grooving.jpg"
 
 const ShortsList = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeVideo, setActiveVideo] = useState(null);
 
     const shorts = [
-        { label: "MDR Grooving", src: MDRLAbsGroovingVideoPreview, thumbnail: MDRLAbsGroovingThumbnail },
+        { label: "MDR Grooving", src: MDRLabsGroovingVideoPreview, thumbnail: MDRLabsGroovingThumbnail },
     ];
 
     return (

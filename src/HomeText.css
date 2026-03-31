@@ -4,7 +4,7 @@
 }
 
 .home-layout {
-  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
+  /* background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif'); */
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -32,7 +32,7 @@
   font-size: 2.75rem;
   margin-bottom: 0rem;
   font-family: Latin;
-  animation: float 10.68s ease-in-out infinite;
+  /* animation: float 10.68s ease-in-out infinite; */
   text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
 }
 
@@ -40,7 +40,7 @@
   font-size: 1.2rem;
   margin-top: 0rem;
   font-family: 'Times New Roman', Times, serif;
-  animation: float 10s ease-in-out infinite;
+  /* animation: float 10s ease-in-out infinite; */
 }
 
 @keyframes float {

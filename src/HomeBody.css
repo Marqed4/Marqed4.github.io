@@ -1,7 +1,45 @@
 body {
   margin: 0;
-  padding: 0;
-  background-color: bisque;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #FFE4C4 0%,
+    #F5D3B3 40%,
+    #E8C3A3 70%,
+    #D9B394 100%
+  );
+
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 200%; 
+  height: 200%;
+  background-image: url("./Resources/art/Background Project/Gradients/Opal Grain.gif");
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.intro-header {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: -3rem;
 }
