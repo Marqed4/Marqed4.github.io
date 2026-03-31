@@ -1,10 +1,11 @@
 import Navbar from "./Navbar.js"
+import DetailsNavbarInactive from "../Resources/art/Background Project/Gradients/Details Navbar Inactive.gif"
 
 const Details = () => {
   return (
     <div className="details-container">
       <Navbar/>
-      <h1 className="details-header">Details</h1>
+      <h1><img src={DetailsNavbarInactive} className="details-header" alt="Details" /></h1>
 
       <div className="details-content">
         <div className = "details-layout-emails">

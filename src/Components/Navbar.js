@@ -19,6 +19,10 @@ import DetailsNavbarInactive from "../Resources/art/Background Project/Gradients
 import YoutubeIcon from "../Resources/art/Youtube.png";
 import YoutubeNavbarActive from "../Resources/art/Background Project/Gradients/YouTube Navbar Active.gif"
 import YoutubeNavbarInactive from "../Resources/art/Background Project/Gradients/YouTube Navbar Inactive.gif"
+import EditsNavbarInactive from "../Resources/art/Background Project/Gradients/Edits Navbar Inactive.gif"
+import EditsNavbarActive from "../Resources/art/Background Project/Gradients/Edits Navbar Active.gif"
+import ShortsNavbarInactive from "../Resources/art/Background Project/Gradients/Shorts Navbar Inactive.gif"
+import ShortsNavbarActive from "../Resources/art/Background Project/Gradients/Shorts Navbar Active.gif"
 
 import GitHubIcon from "../Resources/art/GitHub.png";
 import GithubNavbarActive from "../Resources/art/Background Project/Gradients/GitHub Navbar Active.gif"
@@ -31,6 +35,8 @@ const Navbar = () =>
   const [homeNavbarGif, setHomeNavbarGif] = useState(HomeNavbarInactive);
   const [detailsNavbarGif, setDetailsNavbarGif] = useState(DetailsNavbarInactive);
   const [youtubeNavbarGif, setYoutubeNavbarGif] = useState(YoutubeNavbarInactive);
+  const [editsNavbarGif, setEditsNavbarGif] = useState(EditsNavbarInactive);
+  const [shortsNavbarGif, setShortsNavbarGif] = useState(ShortsNavbarInactive);
   const [githubNavbarGif, setGithubNavbarGif] = useState(GithubNavbarInactive);
 
   const SpellRef = useRef(null)
@@ -122,19 +128,27 @@ const Navbar = () =>
           <img src={DetailsIcon} alt="Details" className="details-link-icon"/>
         </Link>
 
-        <div className="dropdown-container"
-          onMouseEnter={() => { playSpell(); setYoutubeNavbarGif(YoutubeNavbarActive); }}
-          onMouseLeave={() => { stopHoverAudio(); setYoutubeNavbarGif(YoutubeNavbarInactive); }}
+      <div className="dropdown-container"
+        onMouseEnter={() => { playSpell(); setYoutubeNavbarGif(YoutubeNavbarActive); }}
+        onMouseLeave={() => { stopHoverAudio(); setYoutubeNavbarGif(YoutubeNavbarInactive); }}
         >
-          <a href="https://www.youtube.com/Marqed" className="nav-btn">
-            <img src={youtubeNavbarGif} className="youtube-button" alt="YouTube" />
-            <img src={YoutubeIcon} alt="YouTube" className="youtube-link-icon"/>
-          </a>
-          <div className="dropdown-menu">
-            <a href="https://www.youtube.com/Marqed/videos">Edits</a>
-            <a href="https://www.youtube.com/Marqed/shorts">Shorts</a>
-          </div>
-        </div>
+      <a href="https://www.youtube.com/Marqed" className="nav-btn">
+        <img src={youtubeNavbarGif} className="youtube-button" alt="YouTube" />
+        <img src={YoutubeIcon} alt="YouTube" className="youtube-link-icon"/>
+      </a>
+        <div className="dropdown-menu">
+      <a href="https://www.youtube.com/Marqed/videos"
+        onMouseEnter={() => setEditsNavbarGif(EditsNavbarActive)}
+        onMouseLeave={() => setEditsNavbarGif(EditsNavbarInactive)}>
+    <img src={editsNavbarGif} className="edits-button" alt="Edits" />
+      </a>
+      <a href="https://www.youtube.com/Marqed/shorts"
+        onMouseEnter={() => setShortsNavbarGif(ShortsNavbarActive)}
+        onMouseLeave={() => setShortsNavbarGif(ShortsNavbarInactive)}>
+      <img src={shortsNavbarGif} className="shorts-button" alt="Shorts" />
+      </a>
+    </div>
+      </div>
 
         <a href="https://github.com/Marqed4" className="nav-btn"
           onMouseEnter={() => { playLeni(); setGithubNavbarGif(GithubNavbarActive); }}
