@@ -1,4 +1,4 @@
-import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob.gif"
+import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob Marble.gif"
 import Navbar from "./Navbar.js"
 import HomeEdits from "./HomeEdits.js"
 import HomeShorts from "./HomeShorts.js"
@@ -7,7 +7,6 @@ import HomeShorts from "./HomeShorts.js"
 const Home = () => {
   return ( 
     <>
-
       <div className = "home-container">
         <Navbar/>
         <div className = "home-banner-container">

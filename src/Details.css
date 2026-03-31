@@ -67,6 +67,18 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.details-layout-emails {
+  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 240px;
+  max-height: 160px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 768px) {
   .details-content {
     flex-direction: column;
@@ -81,7 +93,9 @@
 
 .details-education-header,
 .details-interests-header,
-.details-skills-header {
+.details-skills-edit-software,
+.details-skills-lang-framework,
+.details-emails-header {
   font-family: "Latin";
   font-size: 2rem;
   text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);

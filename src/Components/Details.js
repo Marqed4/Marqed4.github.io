@@ -7,9 +7,20 @@ const Details = () => {
       <h1 className="details-header">Details</h1>
 
       <div className="details-content">
+        <div className = "details-layout-emails">
+            <p>
+              <h2 className = "details-emails-header">
+                Contacts
+              </h2>
+              School Email: zachery.francis28@bcmail.cuny.edu<br/>
+              Professional Email: zacherywfrancis@gmail.com<br/>
+              Video Editing Email: marqers7@gmail.com
+            </p>
+          </div>
+
         <div className = "education-and-skills">
-          <div className="details-layout-edu">
-            <h2 className="details-education-header">Education</h2>
+          <div className = "details-layout-edu">
+            <h2 className = "details-education-header">Education</h2>
             <p>
               Brooklyn College<br/>
               • B.S. in Information Systems
@@ -20,21 +31,26 @@ const Details = () => {
             </p>
           </div>
 
-          <div className="details-layout-skills">
-            <h2 className="details-skills-header">Editing Softwares</h2>
+          <div className = "details-layout-skills">
+            <h2 className = "details-skills-edit-software">Editing Softwares</h2>
             <p>
               • Adobe After Effects<br/>
               • Adobe Premiere Pro<br/>
               • Adobe Media Encoder<br/>
               • Sony Vegas Pro<br/>
             </p>
-            <h2 className="details-skills-header">Coding Languages/ Frameworks</h2>
-            <p>
-              • Java / Oracle JDK 23/25<br/>
-              • C# / Microsoft Dotnet 9.0<br/>
-              • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
-              • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
-            </p>
+          </div>
+
+          <div className = "details-layout-skills">
+            <h2 className = "details-skills-lang-framework">
+                Coding Languages/ Frameworks
+              </h2>
+              <p>
+                • Java / Oracle JDK 23/25<br/>
+                • C# / Microsoft Dotnet 9.0<br/>
+                • Python / Python 3.13 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
+                • React / React 11.9 (HTML, JS, CSS) 𝙎𝙩𝙪𝙙𝙮𝙞𝙣𝙜<br/>
+              </p>
           </div>
         </div>
 
