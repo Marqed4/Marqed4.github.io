@@ -1,31 +1,41 @@
 {
   "files": {
-    "main.css": "/static/css/main.601e0971.css",
-    "main.js": "/static/js/main.c0e01962.js",
+    "main.css": "/static/css/main.c19ccd2b.css",
+    "main.js": "/static/js/main.aa3690f0.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
-    "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.2d8d691dfebf3a8a0bec.gif",
+    "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
+    "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
     "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
     "static/media/BubbleSlice.webm": "/static/media/BubbleSlice.6db8aad250ea0028bcce.webm",
     "static/media/Orange Marble Gradient.gif": "/static/media/Orange Marble Gradient.ce55b1ef20540ab72dbf.gif",
     "static/media/MDR Labs Grooving.mp4": "/static/media/MDR Labs Grooving.d5f01a0387caadcdf4f8.mp4",
+    "static/media/Orange Glob Marble Head.gif": "/static/media/Orange Glob Marble Head.264479fc87023070cf16.gif",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
     "static/media/Leni.mp3": "/static/media/Leni.cb37632fdd903dca91e1.mp3",
     "static/media/OnlinePersona.mp3": "/static/media/OnlinePersona.bc15bbaf551e258353ac.mp3",
+    "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
+    "static/media/Details Navbar Active.gif": "/static/media/Details Navbar Active.322f34d541d27a5717f2.gif",
+    "static/media/GitHub Navbar Active.gif": "/static/media/GitHub Navbar Active.4d6b3c803d07f1bc8df8.gif",
+    "static/media/YouTube Navbar Inactive.gif": "/static/media/YouTube Navbar Inactive.bb6aa8de617ccdb1e250.gif",
+    "static/media/Details Navbar Inactive.gif": "/static/media/Details Navbar Inactive.4d2d0c2ab775424cce3a.gif",
+    "static/media/GitHub Navbar Inactive.gif": "/static/media/GitHub Navbar Inactive.102c2f67a6fe8ea5901a.gif",
+    "static/media/Name Header.gif": "/static/media/Name Header.1654a7bbf0530b7d22fb.gif",
+    "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
+    "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
     "static/media/Affirmations.jpg": "/static/media/Affirmations.f199e5f8d7967955224f.jpg",
     "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
     "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
-    "static/media/Marqed 250.ico": "/static/media/Marqed 250.fc12f464358e7141b655.ico",
     "static/media/BubbleSlice.jpg": "/static/media/BubbleSlice.8bae4a9720fb400905cd.jpg",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.601e0971.css.map": "/static/css/main.601e0971.css.map",
-    "main.c0e01962.js.map": "/static/js/main.c0e01962.js.map"
+    "main.c19ccd2b.css.map": "/static/css/main.c19ccd2b.css.map",
+    "main.aa3690f0.js.map": "/static/js/main.aa3690f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.601e0971.css",
-    "static/js/main.c0e01962.js"
+    "static/css/main.c19ccd2b.css",
+    "static/js/main.aa3690f0.js"
   ]
 }
