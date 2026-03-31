@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c19ccd2b.css",
-    "main.js": "/static/js/main.2ab0fe80.js",
+    "main.css": "/static/css/main.bd880e3f.css",
+    "main.js": "/static/js/main.1392a9ca.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
@@ -18,11 +18,15 @@
     "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
     "static/media/Details Navbar Active.gif": "/static/media/Details Navbar Active.322f34d541d27a5717f2.gif",
     "static/media/GitHub Navbar Active.gif": "/static/media/GitHub Navbar Active.083b6cfb3e87b1ef8501.gif",
+    "static/media/Shorts Navbar Active.gif": "/static/media/Shorts Navbar Active.452da1ec1ecfbecbb188.gif",
     "static/media/YouTube Navbar Inactive.gif": "/static/media/YouTube Navbar Inactive.bb6aa8de617ccdb1e250.gif",
     "static/media/Details Navbar Inactive.gif": "/static/media/Details Navbar Inactive.4d2d0c2ab775424cce3a.gif",
     "static/media/GitHub Navbar Inactive.gif": "/static/media/GitHub Navbar Inactive.102c2f67a6fe8ea5901a.gif",
+    "static/media/Edits Navbar Active.gif": "/static/media/Edits Navbar Active.53c5d7f703854c3b29ef.gif",
+    "static/media/Shorts Navbar Inactive.gif": "/static/media/Shorts Navbar Inactive.2235ceed25564ec83c16.gif",
     "static/media/Name Header.gif": "/static/media/Name Header.1654a7bbf0530b7d22fb.gif",
     "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
+    "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
     "static/media/Affirmations.jpg": "/static/media/Affirmations.f199e5f8d7967955224f.jpg",
     "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
@@ -31,11 +35,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.c19ccd2b.css.map": "/static/css/main.c19ccd2b.css.map",
-    "main.2ab0fe80.js.map": "/static/js/main.2ab0fe80.js.map"
+    "main.bd880e3f.css.map": "/static/css/main.bd880e3f.css.map",
+    "main.1392a9ca.js.map": "/static/js/main.1392a9ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.c19ccd2b.css",
-    "static/js/main.2ab0fe80.js"
+    "static/css/main.bd880e3f.css",
+    "static/js/main.1392a9ca.js"
   ]
 }
