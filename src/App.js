@@ -9,11 +9,13 @@ import './YouTubeDropdown.css';
 import './HomeEditsShorts.css';
 import './HomeEdits.css';
 import './HomeShorts.css';
+import './MediaPreviews.css';
 import Home from "./Components/Home";
 
 // <---- Details Page ---->
 import Details from "./Components/Details";
 import './Details.css';
+import MediaPreviews from "./Components/MediaPreviews";
 
 const App = () => {
   return (

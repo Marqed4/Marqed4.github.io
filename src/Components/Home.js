@@ -1,24 +1,22 @@
 import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob Marble.gif"
 import introheader from "../Resources/art/Background Project/Gradients/Name Header.gif"
 import Navbar from "./Navbar.js"
-import HomeEdits from "./HomeEdits.js"
-import HomeShorts from "./HomeShorts.js"
-
+import MediaPreviews from "./MediaPreviews.js"
 
 const Home = () => {
   return ( 
     <>
-      <div className = "home-container">
+      <div className="home-container">
         <Navbar/>
-        <div className = "home-banner-container">
-          <img src = {bannerbackground} alt = "" />
+        <div className="home-banner-container">
+          <img src={bannerbackground} alt="" />
         </div>
-        <div className = "home-layout" />
-        <div className = "home-name-text-container">
+        <div className="home-layout" />
+        <div className="home-name-text-container">
           <img 
-            src = {introheader}
+            src={introheader}
             alt="Hey, I'm Zachery / Marqed"
-            className = "intro-header"
+            className="intro-header"
           />
           <p>
             Content creator and developer based out of Brooklyn, New York. <br />
@@ -28,15 +26,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className = "HomePageMediaPreviews">
-        <div className = "EditsPreviewContainer">
-          <HomeEdits/>
-        </div>
-
-        <div className = "ShortsPreviewContainer">
-          <HomeShorts/>
-        </div>
-      </div>
+      <MediaPreviews />
     </>
   );
 };

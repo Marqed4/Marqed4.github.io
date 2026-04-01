@@ -101,19 +101,6 @@
     flex-shrink: 1;
 }
 
-/* .dropdown-list-shorts {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    z-index: 100;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-} */
-
 .dropdown-list-shorts {
     position: absolute;
     top: 100%;
@@ -140,4 +127,8 @@
     max-height: 500px;
     opacity: 1;
     transform: translateY(0);
+}
+
+.dropdown-toggle-shorts img {
+    width: 150px;
 }

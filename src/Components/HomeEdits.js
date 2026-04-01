@@ -1,4 +1,8 @@
 import { useState } from "react"
+
+import ShowEditsInactive from "../Resources/art/Background Project/Gradients/Show Edits Inactive.gif"
+import HideEditsActive from "../Resources/art/Background Project/Gradients/Hide Edits Active.gif"
+
 import DemandsVideoPreview from "../Resources/art/Edits/Demands/Demands.webm"
 import DemandsThumbnail from "../Resources/art/Edits/Demands/Demands.jpg"
 import SecularVideoPreview from "../Resources/art/Edits/Secular/Secular.webm"
@@ -8,8 +12,7 @@ import AffirmationsThumbnail from "../Resources/art/Edits/Affirmations/Affirmati
 import BubbleSliceVideoPreview from "../Resources/art/Edits/BubbleSlice/BubbleSlice.webm"
 import BubbleSliceThumbnail from "../Resources/art/Edits/BubbleSlice/BubbleSlice.jpg"
 
-const EditsList = () => {
-    const [isOpen, setIsOpen] = useState(false);
+const HomeEdits = ({ isOpen, onToggle }) => {
     const [activeVideo, setActiveVideo] = useState(null);
 
     const videos = [
@@ -20,45 +23,45 @@ const EditsList = () => {
     ];
 
     return (
-        <div className = "EditsContainer">
-
-            <div className = "EditsDropdown">
-                <button
-                    className = "dropdown-toggle-edits"
-                    onClick = {() => setIsOpen(prev => !prev)}>
-                    {isOpen ? "▲ Hide Edits" : "▼ Show Edits"}
+        <div className="EditsContainer">
+            <div className="EditsDropdown">
+                <button className="dropdown-toggle-edits" onClick={onToggle}>
+                    {isOpen
+                        ? <img src={HideEditsActive} alt="Hide Edits" />
+                        : <img src={ShowEditsInactive} alt="Show Edits" />
+                    }
                 </button>
 
                 <div className={`dropdown-list-edits ${isOpen ? "open" : ""}`}>
-                        {videos.map((video) => (
-                            <div
-                                key = {video.label}
-                                className = "video-player-item-edits"
-                                onClick = {() => setActiveVideo(video)}>
-                                <img src = {video.thumbnail} alt = {video.label} className = "video-thumbnail" />
-                                <span className = "play-button-edits">Preview {video.label} 🎥</span>
-                            </div>
-                        ))}
-                    </div>
+                    {videos.map((video) => (
+                        <div
+                            key={video.label}
+                            className="video-player-item-edits"
+                            onClick={() => setActiveVideo(video)}
+                        >
+                            <img src={video.thumbnail} alt={video.label} className="video-thumbnail" />
+                            <span className="play-button-edits">Preview {video.label} 🎥</span>
+                        </div>
+                    ))}
+                </div>
             </div>
 
-            <div className = "EditsWindow">
+            <div className="EditsWindow">
                 {activeVideo && (
-                    <div className = "video-container-edits">
-                        <button className = "play-button-edits" onClick = {() => setActiveVideo(null)}>✕ Stop</button>
+                    <div className="video-container-edits">
+                        <button className="play-button-edits" onClick={() => setActiveVideo(null)}>✕ Stop</button>
                         <video
-                            src = {activeVideo.src}
+                            src={activeVideo.src}
                             autoPlay
                             playsInline
-                            onPlay = {(e) => e.target.volume = 0.05}
-                            onEnded = {() => setActiveVideo(null)}
+                            onPlay={(e) => e.target.volume = 0.05}
+                            onEnded={() => setActiveVideo(null)}
                         />
                     </div>
                 )}
             </div>
-
         </div>
     );
 };
 
-export default EditsList;
+export default HomeEdits;
