@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.831abbae.css",
-    "main.js": "/static/js/main.b7d9e949.js",
+    "main.js": "/static/js/main.c7a6dbca.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
@@ -42,10 +42,10 @@
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
     "main.831abbae.css.map": "/static/css/main.831abbae.css.map",
-    "main.b7d9e949.js.map": "/static/js/main.b7d9e949.js.map"
+    "main.c7a6dbca.js.map": "/static/js/main.c7a6dbca.js.map"
   },
   "entrypoints": [
     "static/css/main.831abbae.css",
-    "static/js/main.b7d9e949.js"
+    "static/js/main.c7a6dbca.js"
   ]
 }
