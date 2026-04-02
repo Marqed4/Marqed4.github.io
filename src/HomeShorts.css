@@ -8,8 +8,8 @@
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
-    margin-top: 10px;
-    padding-left: 20px;
+    margin-top: -15px;
+    padding-left: 30px;
 }
 
 .ShortsWindow {
@@ -78,6 +78,7 @@
 .ShortsWindow {
     flex: 1;
     max-width: 300px;
+    aspect-ratio: 16 / 9;
 }
 
 .video-container-shorts {

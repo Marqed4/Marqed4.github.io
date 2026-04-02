@@ -62,3 +62,7 @@
     max-width: 100%;
   }
 }
+
+.home-container {
+  padding-top: 80px;
+}

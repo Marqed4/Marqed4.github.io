@@ -25,13 +25,11 @@ nav {
 }
 
 .home-icon {
+  position: fixed;
+  top: 12px;
   width: 150px;
   height: 90px;
   overflow: hidden;
-  z-index: 0;
-  position: left;
-  top: 12px;
-  right: 16px; 
 }
 
 .home-icon img {
