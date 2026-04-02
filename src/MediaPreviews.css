@@ -21,8 +21,8 @@
 .ContentDropdownRow {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: -10px;
+    gap: 2px;
+    align-items: center;
 }
 
 .ContentDropdown {
@@ -40,4 +40,14 @@
     max-height: 1000px;
     opacity: 1;
     transform: translateY(0);
+}
+
+.dropdown-down-arrow-one {
+    width: 45px;
+    height: auto;
+}
+
+.dropdown-down-arrow-two {
+    width: 45px;
+    height: auto;
 }

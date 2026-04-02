@@ -4,6 +4,7 @@ import HomeShorts from "./HomeShorts"
 
 import ShowContentInactive from "../Resources/art/Background Project/Gradients/Preview Content Inactive.gif"
 import ShowContentActive from "../Resources/art/Background Project/Gradients/Hide Content Active.gif"
+import DownArrow from "../Resources/art/Background Project/Gradients/Down Arrow Orange Marble Gradient.gif"
 
 const MediaPreviews = () => {
     const [contentOpen, setContentOpen] = useState(false);
@@ -29,14 +30,14 @@ const MediaPreviews = () => {
 
             {contentOpen && (
                 <div className="ContentDropdownRow">
+                    <img src={DownArrow} className="dropdown-down-arrow-one"></img>
                     <HomeEdits
                         isOpen={openSection === "edits"}
-                        onToggle={() => setOpenSection(prev => prev === "edits" ? null : "edits")}
-                    />
+                        onToggle={() => setOpenSection(prev => prev === "edits" ? null : "edits")}/>
+                    <img src={DownArrow} className="dropdown-down-arrow-two"></img>
                     <HomeShorts
                         isOpen={openSection === "shorts"}
-                        onToggle={() => setOpenSection(prev => prev === "shorts" ? null : "shorts")}
-                    />
+                        onToggle={() => setOpenSection(prev => prev === "shorts" ? null : "shorts")}/>
                 </div>
             )}
         </div>
