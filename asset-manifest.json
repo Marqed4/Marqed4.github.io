@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.83fae204.css",
-    "main.js": "/static/js/main.cf5c54c9.js",
+    "main.css": "/static/css/main.a6684a5b.css",
+    "main.js": "/static/js/main.a916b7ec.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
@@ -52,11 +52,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.83fae204.css.map": "/static/css/main.83fae204.css.map",
-    "main.cf5c54c9.js.map": "/static/js/main.cf5c54c9.js.map"
+    "main.a6684a5b.css.map": "/static/css/main.a6684a5b.css.map",
+    "main.a916b7ec.js.map": "/static/js/main.a916b7ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.83fae204.css",
-    "static/js/main.cf5c54c9.js"
+    "static/css/main.a6684a5b.css",
+    "static/js/main.a916b7ec.js"
   ]
 }
