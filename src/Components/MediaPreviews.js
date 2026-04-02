@@ -20,7 +20,16 @@ const MediaPreviews = () => {
             <button 
                 className="dropdown-toggle-content" 
                 onClick={handleContentToggle}
-                style={{ background: 'none', border: 'none', padding: 0, margin: 0, outline: 'none' }}
+                style=
+                {
+                    { 
+                        background: 'none', 
+                        border: 'none', 
+                        padding: 0, 
+                        margin: 0, 
+                        outline: 'none' 
+                    }
+                }
             >
                 {contentOpen
                     ? <img src={ShowContentActive} alt="Hide Content" />
