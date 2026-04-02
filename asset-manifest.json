@@ -1,15 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.831abbae.css",
-    "main.js": "/static/js/main.c7a6dbca.js",
+    "main.css": "/static/css/main.500af35e.css",
+    "main.js": "/static/js/main.91355d31.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
     "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
     "static/media/BubbleSlice.webm": "/static/media/BubbleSlice.6db8aad250ea0028bcce.webm",
-    "static/media/Orange Marble Gradient.gif": "/static/media/Orange Marble Gradient.ce55b1ef20540ab72dbf.gif",
     "static/media/MDR Labs Grooving.mp4": "/static/media/MDR Labs Grooving.d5f01a0387caadcdf4f8.mp4",
+    "static/media/Contacts Orange Marble Gradient.gif": "/static/media/Contacts Orange Marble Gradient.1cb0cf711ae780a8c7b4.gif",
+    "static/media/Interests Orange Marble Gradient.gif": "/static/media/Interests Orange Marble Gradient.1104639765fef11e5448.gif",
+    "static/media/Coding Lang Frameworks Orange Marble Gradient.gif": "/static/media/Coding Lang Frameworks Orange Marble Gradient.e4f444c3a6e32b3a17a1.gif",
+    "static/media/Education Orange Marble Gradient.gif": "/static/media/Education Orange Marble Gradient.4c2487a1b63c29f79cf4.gif",
+    "static/media/Editing Software Orange Marble Gradient.gif": "/static/media/Editing Software Orange Marble Gradient.447f93764cabdc75f2a1.gif",
     "static/media/Orange Glob Marble Head.gif": "/static/media/Orange Glob Marble Head.264479fc87023070cf16.gif",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
@@ -22,6 +26,7 @@
     "static/media/YouTube Navbar Inactive.gif": "/static/media/YouTube Navbar Inactive.bb6aa8de617ccdb1e250.gif",
     "static/media/Hide Shorts Active.gif": "/static/media/Hide Shorts Active.d1d04ec060070c0b6fe6.gif",
     "static/media/Hide Edits Active.gif": "/static/media/Hide Edits Active.941369ca28604fa60205.gif",
+    "static/media/Coding Languages Frameworks Details Inactive.gif": "/static/media/Coding Languages Frameworks Details Inactive.67fa46c9679b28ea2f62.gif",
     "static/media/Details Navbar Inactive.gif": "/static/media/Details Navbar Inactive.4d2d0c2ab775424cce3a.gif",
     "static/media/Show Shorts Inactive.gif": "/static/media/Show Shorts Inactive.f297cdd858fe0c27a98a.gif",
     "static/media/GitHub Navbar Inactive.gif": "/static/media/GitHub Navbar Inactive.102c2f67a6fe8ea5901a.gif",
@@ -31,21 +36,25 @@
     "static/media/Show Edits Inactive.gif": "/static/media/Show Edits Inactive.68e44fd9296d2c48fdb0.gif",
     "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
     "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
+    "static/media/Editing Software Details Inactive.gif": "/static/media/Editing Software Details Inactive.b0e022715db76989a352.gif",
     "static/media/Hide Content Active.gif": "/static/media/Hide Content Active.c21f994244bf9efac8c9.gif",
     "static/media/Preview Content Inactive.gif": "/static/media/Preview Content Inactive.d16692bf65ace2866865.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
     "static/media/Affirmations.jpg": "/static/media/Affirmations.f199e5f8d7967955224f.jpg",
+    "static/media/Education Details Inactive.gif": "/static/media/Education Details Inactive.c00e95698a423ca1dbaf.gif",
+    "static/media/Interests Details Inactive.gif": "/static/media/Interests Details Inactive.c06a80267e8211287a06.gif",
+    "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
     "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
     "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
     "static/media/BubbleSlice.jpg": "/static/media/BubbleSlice.8bae4a9720fb400905cd.jpg",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.831abbae.css.map": "/static/css/main.831abbae.css.map",
-    "main.c7a6dbca.js.map": "/static/js/main.c7a6dbca.js.map"
+    "main.500af35e.css.map": "/static/css/main.500af35e.css.map",
+    "main.91355d31.js.map": "/static/js/main.91355d31.js.map"
   },
   "entrypoints": [
-    "static/css/main.831abbae.css",
-    "static/js/main.c7a6dbca.js"
+    "static/css/main.500af35e.css",
+    "static/js/main.91355d31.js"
   ]
 }
