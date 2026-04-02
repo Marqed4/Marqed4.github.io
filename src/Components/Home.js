@@ -43,9 +43,8 @@ const Home = () => {
             be sure to check out the details page for more information. <br/>
           </p>
         </div>
+        <MediaPreviews />
       </div>
-
-      <MediaPreviews />
     </>
   );
 };
