@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.500af35e.css",
+    "main.css": "/static/css/main.ccf8e091.css",
     "main.js": "/static/js/main.91355d31.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
@@ -50,11 +50,11 @@
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.500af35e.css.map": "/static/css/main.500af35e.css.map",
+    "main.ccf8e091.css.map": "/static/css/main.ccf8e091.css.map",
     "main.91355d31.js.map": "/static/js/main.91355d31.js.map"
   },
   "entrypoints": [
-    "static/css/main.500af35e.css",
+    "static/css/main.ccf8e091.css",
     "static/js/main.91355d31.js"
   ]
 }
