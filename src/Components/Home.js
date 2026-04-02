@@ -1,9 +1,16 @@
+import { useEffect } from "react";
+
 import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob Marble.gif"
 import introheader from "../Resources/art/Background Project/Gradients/Name Header.gif"
 import Navbar from "./Navbar.js"
 import MediaPreviews from "./MediaPreviews.js"
 
 const Home = () => {
+
+  useEffect(() => {
+  document.title = "Marqed's Homepage";
+}, []);
+
   return ( 
     <>
       <div className="home-container">

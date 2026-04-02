@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Navbar from "./Navbar.js"
 import DetailsNavbarInactive from "../Resources/art/Background Project/Gradients/Details Navbar Inactive.gif"
 import ContactDetailsInactive from "../Resources/art/Background Project/Gradients/Contacts Details Inactive.gif"
@@ -7,6 +8,11 @@ import EditingSoftwareDetailsInactive from "../Resources/art/Background Project/
 import CodingLangFrameworkDetailsInactive from "../Resources/art/Background Project/Gradients/Coding Languages Frameworks Details Inactive.gif"
 
 const Details = () => {
+
+  useEffect(() => {
+  document.title = "Marqed's Details";
+}, []);
+
   return (
     <div className="details-container">
       <Navbar/>

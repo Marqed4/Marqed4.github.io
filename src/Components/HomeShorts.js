@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 import ShowShortsInactive from "../Resources/art/Background Project/Gradients/Show Shorts Inactive.gif"
-import HideShortsActive from "../Resources/art/Background Project/Gradients/Hide Shorts Active.gif"
+import HideShortsActive from "../Resources/art/Background Project/Gradients/Hide Shorts Active.gif" /*Fix Ac*/
 
 import MDRLabsGroovingVideoPreview from "../Resources/art/Shorts/MDR Labs Grooving/MDR Labs Grooving.mp4"
 import MDRLabsGroovingThumbnail from "../Resources/art/Shorts/MDR Labs Grooving/MDR Labs Grooving.jpg"
