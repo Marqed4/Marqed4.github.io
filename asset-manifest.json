@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3816dcb8.css",
-    "main.js": "/static/js/main.65bc80c1.js",
+    "main.css": "/static/css/main.83fae204.css",
+    "main.js": "/static/js/main.cf5c54c9.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
@@ -47,15 +47,16 @@
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
     "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
     "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
+    "static/media/Start Header.gif": "/static/media/Start Header.6246cb3bfaf1cac3d6b4.gif",
     "static/media/BubbleSlice.jpg": "/static/media/BubbleSlice.8bae4a9720fb400905cd.jpg",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.3816dcb8.css.map": "/static/css/main.3816dcb8.css.map",
-    "main.65bc80c1.js.map": "/static/js/main.65bc80c1.js.map"
+    "main.83fae204.css.map": "/static/css/main.83fae204.css.map",
+    "main.cf5c54c9.js.map": "/static/js/main.cf5c54c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.3816dcb8.css",
-    "static/js/main.65bc80c1.js"
+    "static/css/main.83fae204.css",
+    "static/js/main.cf5c54c9.js"
   ]
 }
