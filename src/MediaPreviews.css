@@ -1,5 +1,6 @@
 .HomePageMediaPreviews {
     display: flex;
+    margin-top: -150px;
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
