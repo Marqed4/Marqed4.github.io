@@ -27,12 +27,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 40px;
-  padding: 20px;
+  gap:25px;
+  padding: 10px;
 }
 
 .details-layout-edu {
-  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
+  background-image: url('./Resources/art/Background Project/Gradients/Education Orange Marble Gradient.gif');
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -44,19 +44,32 @@
 }
 
 .details-layout-int {
-  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
-  background-size: cover;
+  background-image: url('./Resources/art/Background Project/Gradients/Interests Orange Marble Gradient.gif');
+  background-size: 300px;
   background-position: center;
   border-radius: 15px;
+  background-repeat: no-repeat;
   padding: 40px 30px;
   max-width: 300px;
-  max-height: 435px;
+  max-height: 445px;
   text-align: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.details-layout-skills {
-  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
+.details-layout-editing-software {
+  background-image: url('./Resources/art/Background Project/Gradients/Editing Software Orange Marble Gradient.gif');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 200px;
+  max-height: 540px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-layout-coding-lang-framework {
+    background-image: url('./Resources/art/Background Project/Gradients/Coding Lang Frameworks Orange Marble Gradient.gif');
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -68,10 +81,11 @@
 }
 
 .details-layout-emails {
-  background-image: url('./Resources/art/Background Project/Gradients/Orange Marble Gradient.gif');
-  background-size: cover;
+  background-image: url('./Resources/art/Background Project/Gradients/Contacts Orange Marble Gradient.gif');
   background-position: center;
+  background-size: 200px;
   border-radius: 15px;
+  background-repeat: no-repeat;
   padding: 40px 30px;
   max-width: 240px;
   max-height: 160px;
@@ -96,11 +110,8 @@
 .details-skills-edit-software,
 .details-skills-lang-framework,
 .details-emails-header {
-  font-family: "Latin";
-  font-size: 2rem;
-  text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
   animation: float 10.68s ease-in-out infinite;
-  margin-bottom: 15px;
+  margin-bottom: -30px;
 }
 
 .details-education,
@@ -115,4 +126,42 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.contacts-header {
+  display: flexbox;
+  transform: translate(-60px, -50px);
+}
+
+.education-header {
+  display: flexbox;
+  transform: translate(-75px, -50px);
+}
+
+.editing-software-header {
+  display: flexbox;
+  transform: translate(-85px, -50px);
+}
+
+.coding-lang-framworks-header {
+  display: flexbox;
+  transform: translate(-85px, -50px);
+}
+
+.interests-header {
+  display: flexbox;
+  transform: translate(-25px, -50px);
+}
+
+.editing-software-body,
+.coding-lang-framworks-body {
+  display: flexbox;
+  transform: translate(-10px, -70px)
+}
+
+.contacts-body,
+.education-body,
+.interests-body {
+  display: flexbox;
+  transform: translate(10px, -85px)
 }
