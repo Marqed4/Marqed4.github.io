@@ -103,10 +103,13 @@ const Navbar = () =>
   };
 
   return (
-    <nav>
-      <div className="Navbar-logo-container">
+    <>
+
+    <div className="home-icon">
         <img src={Logo} alt=""/>
       </div>
+
+    <nav>
 
       {/* The Desktop Menu */}
       <div className="Navbar-links-container">
@@ -204,6 +207,7 @@ const Navbar = () =>
         </div>
       )}
     </nav>
+  </>
   );
 };
 

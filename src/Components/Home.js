@@ -11,7 +11,6 @@ const Home = () => {
         <div className="home-banner-container">
           <img src={bannerbackground} alt="" />
         </div>
-        <div className="home-layout" />
         <div className="home-name-text-container">
           <img 
             src={introheader}
