@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3816dcb8.css",
-    "main.js": "/static/js/main.5fbead5e.js",
+    "main.js": "/static/js/main.65bc80c1.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
@@ -14,8 +14,8 @@
     "static/media/Coding Lang Frameworks Orange Marble Gradient.gif": "/static/media/Coding Lang Frameworks Orange Marble Gradient.e4f444c3a6e32b3a17a1.gif",
     "static/media/Education Orange Marble Gradient.gif": "/static/media/Education Orange Marble Gradient.4c2487a1b63c29f79cf4.gif",
     "static/media/Editing Software Orange Marble Gradient.gif": "/static/media/Editing Software Orange Marble Gradient.447f93764cabdc75f2a1.gif",
-    "static/media/Orange Glob Marble Head.gif": "/static/media/Orange Glob Marble Head.264479fc87023070cf16.gif",
     "static/media/Down Arrow Orange Marble Gradient.gif": "/static/media/Down Arrow Orange Marble Gradient.3b2f986843aeb7976a86.gif",
+    "static/media/Orange Glob Marble Head.gif": "/static/media/Orange Glob Marble Head.d17b65c0a56acc38984c.gif",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
     "static/media/Leni.mp3": "/static/media/Leni.cb37632fdd903dca91e1.mp3",
@@ -52,10 +52,10 @@
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
     "main.3816dcb8.css.map": "/static/css/main.3816dcb8.css.map",
-    "main.5fbead5e.js.map": "/static/js/main.5fbead5e.js.map"
+    "main.65bc80c1.js.map": "/static/js/main.65bc80c1.js.map"
   },
   "entrypoints": [
     "static/css/main.3816dcb8.css",
-    "static/js/main.5fbead5e.js"
+    "static/js/main.65bc80c1.js"
   ]
 }
