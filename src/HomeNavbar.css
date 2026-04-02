@@ -2,6 +2,11 @@
   font-family: "Latin";
   src: url("./Resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
 
 nav {
   position: fixed;
@@ -9,19 +14,35 @@ nav {
   left: 0;
   width: 100%;
   z-index: 10;
+  box-sizing: border-box;
+  padding: 10px 16px;
+
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  box-sizing: border-box;
+
+  background: transparent;
+}
+
+/* LOGO */
+.Navbar-logo-container img {
+  width: 60px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .Navbar-logo-container {
+    display: block;
+  }
 }
 
 .Navbar-links-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin: auto;
+  gap: 14px;
+  margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -30,99 +51,42 @@ nav {
   }
 }
 
-.nav-logo-contianer img {
-  width: 75px;
-  height: 70px;
-  object-fit: cover;
-  border: #f0a500;
-  border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .Navbar-logo-container {
-    display: none;
-  }
-}
-
-.Navbar-links-container a:hover {
-  color: #8400ff;
-}
-
 .home-button,
 .details-button,
 .youtube-button,
 .github-button {
-  height: 55px;
+  height: 42px;
   width: auto;
 }
 
 .edits-button,
 .shorts-button {
-  transform: translateX(40px);
-  height: 35px;
+  height: 28px;
   width: auto;
-  left: 10px;
 }
 
-.home-link-icon {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -25px;
-  margin-top: 4px;
-  z-index: 1;
-}
-
-.details-link-icon {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -15px;
-  margin-top: 5px;
-  z-index: 1;
-}
-
-.youtube-link-icon {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -5px;
-  margin-top: 5.5px;
-  z-index: 1;
-}
-
+.home-link-icon,
+.details-link-icon,
+.youtube-link-icon,
 .github-link-icon {
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -15px;
-  margin-top: 3.5px;
-  z-index: 1;
+  width: 22px;
+  height: 22px;
+  margin-left: 6px;
 }
 
+.nav-btn,
 .Navbar-links-container a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: black;
-  font-size: 22px;
-  margin: 10px;
   font-family: "Latin";
+  font-size: 18px;
   text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
-  min-height: 0;
-  align-items: flex-start;
-  justify-content: space-evenly;
 }
 
-@media (max-width: 768px) {
-  .Navbar-links-container a {
-    font-size: 22px;
-    margin: 5px;
-  }
+.Navbar-links-container a:hover {
+  color: #8400ff;
 }
 
 .dropdown-container {
@@ -134,59 +98,24 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
+
   flex-direction: column;
-  z-index: 100;
+  gap: 6px;
+  padding: 8px;
   border-radius: 10px;
+  z-index: 100;
 }
 
 .dropdown-container:hover .dropdown-menu {
   display: flex;
 }
 
-.dropdown-menu a {
-  display: flex;
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-.dropdown-menu a:hover {
-  color: #8400ff;
-}
-
+/* HAMBURGER */
 .hamburger {
   display: none;
   font-size: 2rem;
   cursor: pointer;
   margin-left: auto;
-  width: 100px;
-}
-
-.mobile-menu {
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 185px;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  z-index: 100;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.mobile-menu a {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  text-decoration: none;
-  color: black;
-  font-family: "Latin";
-  font-size: 18px;
-  text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
-}
-
-.mobile-menu a:hover {
-  color: #8400ff;
 }
 
 @media (max-width: 768px) {
@@ -194,3 +123,36 @@ nav {
     display: block;
   }
 }
+
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  right: 16px;
+
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 100;
+}
+
+.mobile-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: black;
+  font-family: "Latin";
+  font-size: 16px;
+  text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
+}
+
+.mobile-menu a:hover {
+  color: #8400ff;
+}
+

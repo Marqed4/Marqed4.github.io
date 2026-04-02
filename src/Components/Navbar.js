@@ -104,7 +104,7 @@ const Navbar = () =>
 
   return (
     <nav>
-      <div className="nav-logo-contianer">
+      <div className="Navbar-logo-container">
         <img src={Logo} alt=""/>
       </div>
 
