@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a6684a5b.css",
-    "main.js": "/static/js/main.a916b7ec.js",
+    "main.js": "/static/js/main.e8a62cc2.js",
     "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
@@ -23,9 +23,9 @@
     "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
     "static/media/Details Navbar Active.gif": "/static/media/Details Navbar Active.322f34d541d27a5717f2.gif",
     "static/media/GitHub Navbar Active.gif": "/static/media/GitHub Navbar Active.083b6cfb3e87b1ef8501.gif",
+    "static/media/Hide Shorts Active.gif": "/static/media/Hide Shorts Active.1beda100b563d0e72e19.gif",
     "static/media/Shorts Navbar Active.gif": "/static/media/Shorts Navbar Active.452da1ec1ecfbecbb188.gif",
     "static/media/YouTube Navbar Inactive.gif": "/static/media/YouTube Navbar Inactive.bb6aa8de617ccdb1e250.gif",
-    "static/media/Hide Shorts Active.gif": "/static/media/Hide Shorts Active.d1d04ec060070c0b6fe6.gif",
     "static/media/Hide Edits Active.gif": "/static/media/Hide Edits Active.941369ca28604fa60205.gif",
     "static/media/Coding Languages Frameworks Details Inactive.gif": "/static/media/Coding Languages Frameworks Details Inactive.67fa46c9679b28ea2f62.gif",
     "static/media/Details Navbar Inactive.gif": "/static/media/Details Navbar Inactive.4d2d0c2ab775424cce3a.gif",
@@ -53,10 +53,10 @@
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
     "main.a6684a5b.css.map": "/static/css/main.a6684a5b.css.map",
-    "main.a916b7ec.js.map": "/static/js/main.a916b7ec.js.map"
+    "main.e8a62cc2.js.map": "/static/js/main.e8a62cc2.js.map"
   },
   "entrypoints": [
     "static/css/main.a6684a5b.css",
-    "static/js/main.a916b7ec.js"
+    "static/js/main.e8a62cc2.js"
   ]
 }
