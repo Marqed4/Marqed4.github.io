@@ -156,6 +156,8 @@
 .editing-software-body,
 .coding-lang-framworks-body {
   display: flexbox;
+  font-weight: 225;
+  -webkit-text-stroke: 1px black;
   transform: translate(-10px, -70px)
 }
 
@@ -163,5 +165,7 @@
 .education-body,
 .interests-body {
   display: flexbox;
+  font-weight: 225;
+  -webkit-text-stroke: 1px black;
   transform: translate(10px, -85px)
 }
