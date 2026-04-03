@@ -13,8 +13,8 @@ const HomeEdits = ({ isOpen, onToggle, onVideoActive }) => {
 
     const videos = [
         { label: "Demands", 
-            src: "https://www.youtube.com/embed/YOUR_VIDEO_ID_1?autoplay=1", 
-            thumbnail: "https://img.youtube.com/vi/YOUR_VIDEO_ID_1/0.jpg" },
+            src: "https://www.youtube.com/embed/wHkem_qWhiE?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/W3CCeSd-FCE/0.jpg" },
         { label: "Secular", 
             src: "https://www.youtube.com/embed/y64mTTbF0ZI?autoplay=1", 
             thumbnail: "https://img.youtube.com/vi/y64mTTbF0ZI/0.jpg" },
