@@ -1,14 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.a6684a5b.css",
-    "main.js": "/static/js/main.e8a62cc2.js",
-    "static/media/Affirmations.webm": "/static/media/Affirmations.24e380d11f36bcfa4822.webm",
+    "main.css": "/static/css/main.5f6b7ee0.css",
+    "main.js": "/static/js/main.7b3bbd65.js",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
-    "static/media/Secular.webm": "/static/media/Secular.a514fa29472df3491d2a.webm",
-    "static/media/Demands.webm": "/static/media/Demands.48950c6c9ced5f96b887.webm",
-    "static/media/BubbleSlice.webm": "/static/media/BubbleSlice.6db8aad250ea0028bcce.webm",
-    "static/media/MDR Labs Grooving.mp4": "/static/media/MDR Labs Grooving.d5f01a0387caadcdf4f8.mp4",
     "static/media/Contacts Orange Marble Gradient.gif": "/static/media/Contacts Orange Marble Gradient.1cb0cf711ae780a8c7b4.gif",
     "static/media/Interests Orange Marble Gradient.gif": "/static/media/Interests Orange Marble Gradient.1104639765fef11e5448.gif",
     "static/media/Coding Lang Frameworks Orange Marble Gradient.gif": "/static/media/Coding Lang Frameworks Orange Marble Gradient.e4f444c3a6e32b3a17a1.gif",
@@ -41,22 +36,18 @@
     "static/media/Hide Content Active.gif": "/static/media/Hide Content Active.c21f994244bf9efac8c9.gif",
     "static/media/Preview Content Inactive.gif": "/static/media/Preview Content Inactive.d16692bf65ace2866865.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
-    "static/media/Affirmations.jpg": "/static/media/Affirmations.f199e5f8d7967955224f.jpg",
     "static/media/Education Details Inactive.gif": "/static/media/Education Details Inactive.c00e95698a423ca1dbaf.gif",
     "static/media/Interests Details Inactive.gif": "/static/media/Interests Details Inactive.c06a80267e8211287a06.gif",
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
-    "static/media/Demands.jpg": "/static/media/Demands.3d9df506974524487b3d.jpg",
-    "static/media/Secular.jpg": "/static/media/Secular.20c8ff688eb14aacbc50.jpg",
     "static/media/Start Header.gif": "/static/media/Start Header.6246cb3bfaf1cac3d6b4.gif",
-    "static/media/BubbleSlice.jpg": "/static/media/BubbleSlice.8bae4a9720fb400905cd.jpg",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.a6684a5b.css.map": "/static/css/main.a6684a5b.css.map",
-    "main.e8a62cc2.js.map": "/static/js/main.e8a62cc2.js.map"
+    "main.5f6b7ee0.css.map": "/static/css/main.5f6b7ee0.css.map",
+    "main.7b3bbd65.js.map": "/static/js/main.7b3bbd65.js.map"
   },
   "entrypoints": [
-    "static/css/main.a6684a5b.css",
-    "static/js/main.e8a62cc2.js"
+    "static/css/main.5f6b7ee0.css",
+    "static/js/main.7b3bbd65.js"
   ]
 }
