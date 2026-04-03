@@ -15,6 +15,9 @@ const HomeEdits = ({ isOpen, onToggle, onVideoActive }) => {
         { label: "Demands", 
             src: "https://www.youtube.com/embed/wHkem_qWhiE?autoplay=1", 
             thumbnail: "https://img.youtube.com/vi/W3CCeSd-FCE/0.jpg" },
+        { label: "Sunday", 
+            src: "https://www.youtube.com/embed/DiEGh5E8gKQ?autoplay=1",
+            thumbnail: "https://img.youtube.com/vi/DiEGh5E8gKQ/0.jpg" },
         { label: "Secular", 
             src: "https://www.youtube.com/embed/y64mTTbF0ZI?autoplay=1", 
             thumbnail: "https://img.youtube.com/vi/y64mTTbF0ZI/0.jpg" },
@@ -30,6 +33,9 @@ const HomeEdits = ({ isOpen, onToggle, onVideoActive }) => {
         { label: "Two Sixty", 
             src: "https://www.youtube.com/embed/9mwm132viYc?autoplay=1", 
             thumbnail: "https://img.youtube.com/vi/9mwm132viYc/0.jpg" },
+        { label: "Two Sixty", 
+            src: "https://www.youtube.com/embed/4iea-bE19Ck?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/4iea-bE19Ck/0.jpg" },
     ];
 
     const X = videos.length;
