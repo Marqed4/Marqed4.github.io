@@ -1,9 +1,9 @@
 .EditsContainer {
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     gap: 10px;
     margin-top: -40px;
+    flex-direction: row;
     padding-left: 30px;
 }
 
@@ -11,6 +11,7 @@
     position: relative;
     width: 200px;
     flex-shrink: 0;
+    align-self: flex-start;
 }
 
 .dropdown-toggle-edits {
@@ -53,8 +54,15 @@
     width: 100%;
     height: 80px;
     object-fit: cover;
+    object-position: center 30%;
     border-radius: 6px;
     margin-top: 6px;
+    transform: none;
+}
+
+.video-player-item-edits {
+    overflow: hidden;
+    border-radius: 6px;
 }
 
 .play-button-edits {
@@ -73,6 +81,7 @@
 }
 
 .EditsWindow {
+    align-self: flex-start;
     flex: 1;
     max-width: 600px;
 }
@@ -81,8 +90,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    position: relative;
-    z-index: 3;
 }
 
 .EditsWindow video {
@@ -93,17 +100,15 @@
 }
 
 .dropdown-list-edits {
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: 0;
     left: 0;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     padding: 10px;
     z-index: 100;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -115,9 +120,11 @@
 }
 
 .dropdown-list-edits.open {
-    max-height: 500px;
+    max-height: none;
     opacity: 1;
+    overflow: visible;
     transform: translateY(0);
+    grid-template-columns: repeat(2, 1fr) !important;
 }
 
 .dropdown-toggle-edits img {

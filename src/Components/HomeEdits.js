@@ -3,24 +3,37 @@ import { useState } from "react"
 import ShowEditsInactive from "../Resources/art/Background Project/Gradients/Show Edits Inactive.gif"
 import HideEditsActive from "../Resources/art/Background Project/Gradients/Hide Edits Active.gif"
 
-import DemandsVideoPreview from "../Resources/art/Edits/Demands/Demands.webm"
-import DemandsThumbnail from "../Resources/art/Edits/Demands/Demands.jpg"
-import SecularVideoPreview from "../Resources/art/Edits/Secular/Secular.webm"
-import SecularThumbnail from "../Resources/art/Edits/Secular/Secular.jpg"
-import AffirmationsVideoPreview from "../Resources/art/Edits/Affirmations/Affirmations.webm"
-import AffirmationsThumbnail from "../Resources/art/Edits/Affirmations/Affirmations.jpg"
-import BubbleSliceVideoPreview from "../Resources/art/Edits/BubbleSlice/BubbleSlice.webm"
-import BubbleSliceThumbnail from "../Resources/art/Edits/BubbleSlice/BubbleSlice.jpg"
-
-const HomeEdits = ({ isOpen, onToggle }) => {
+const HomeEdits = ({ isOpen, onToggle, onVideoActive }) => {
     const [activeVideo, setActiveVideo] = useState(null);
 
+    const handleSetVideo = (video) => {
+        setActiveVideo(video);
+        onVideoActive?.(!!video);
+    };
+
     const videos = [
-        { label: "Demands", src: DemandsVideoPreview, thumbnail: DemandsThumbnail },
-        { label: "Secular", src: SecularVideoPreview, thumbnail: SecularThumbnail },
-        { label: "Affirmations", src: AffirmationsVideoPreview, thumbnail: AffirmationsThumbnail },
-        { label: "Bubble Slice", src: BubbleSliceVideoPreview, thumbnail: BubbleSliceThumbnail },
+        { label: "Demands", 
+            src: "https://www.youtube.com/embed/YOUR_VIDEO_ID_1?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/YOUR_VIDEO_ID_1/0.jpg" },
+        { label: "Secular", 
+            src: "https://www.youtube.com/embed/y64mTTbF0ZI?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/y64mTTbF0ZI/0.jpg" },
+        { label: "Affirmations", 
+            src: "https://www.youtube.com/embed/Dkod0mEfCJM?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/Dkod0mEfCJM/0.jpg" },
+        { label: "Crashout", 
+            src: "https://www.youtube.com/embed/rVRhJjQAvQc?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/rVRhJjQAvQc/0.jpg" },
+        { label: "Bubble Slice", 
+            src: "https://www.youtube.com/embed/gSVWBqhQS4w?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/gSVWBqhQS4w/0.jpg" },
+        { label: "Two Sixty", 
+            src: "https://www.youtube.com/embed/9mwm132viYc?autoplay=1", 
+            thumbnail: "https://img.youtube.com/vi/9mwm132viYc/0.jpg" },
     ];
+
+    const X = videos.length;
+    const Y = Math.floor(2 + X / 10);
 
     return (
         <div className="EditsContainer">
@@ -32,30 +45,37 @@ const HomeEdits = ({ isOpen, onToggle }) => {
                     }
                 </button>
 
-                <div className={`dropdown-list-edits ${isOpen ? "open" : ""}`}>
-                    {videos.map((video) => (
-                        <div
-                            key={video.label}
-                            className="video-player-item-edits"
-                            onClick={() => setActiveVideo(video)}
-                        >
-                            <img src={video.thumbnail} alt={video.label} className="video-thumbnail" />
-                            <span className="play-button-edits">Preview {video.label} 🎥</span>
-                        </div>
-                    ))}
-                </div>
+                {!activeVideo && (
+                    <div
+                        className={`dropdown-list-edits ${isOpen ? "open" : ""}`}
+                        style={{ gridTemplateColumns: `repeat(${Y}, 1fr)` }}
+                    >
+                        {videos.map((video) => (
+                            <div
+                                key={video.label}
+                                className="video-player-item-edits"
+                                onClick={() => handleSetVideo(video)}
+                            >
+                                <img src={video.thumbnail} alt={video.label} className="video-thumbnail" />
+                                <span className="play-button-edits">Preview {video.label} 🎥</span>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
 
             <div className="EditsWindow">
                 {activeVideo && (
                     <div className="video-container-edits">
-                        <button className="play-button-edits" onClick={() => setActiveVideo(null)}>✕ Stop</button>
-                        <video
+                        <button className="play-button-edits" onClick={() => handleSetVideo(null)}>✕ Stop</button>
+                        <iframe
+                            width="560"
+                            height="315"
                             src={activeVideo.src}
-                            autoPlay
-                            playsInline
-                            onPlay={(e) => e.target.volume = 0.05}
-                            onEnded={() => setActiveVideo(null)}
+                            title={activeVideo.label}
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
                         />
                     </div>
                 )}

@@ -14,6 +14,7 @@
 
 .ShortsWindow {
     flex: 1;
+    align-self: flex-start;
     max-width: 600px;
 }
 
@@ -46,15 +47,22 @@
     cursor: pointer;
 }
 
+.video-player-item-shorts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
 .video-player-item-shorts:hover {
     color: #8400ff;
 }
 
 .shorts-thumbnail {
-    width: 80px;
-    height: auto;
-    aspect-ratio: 9 / 16;
-    object-fit: center;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
     border-radius: 6px;
     margin-top: 6px;
     display: block;
@@ -78,15 +86,14 @@
 .ShortsWindow {
     flex: 1;
     max-width: 300px;
-    aspect-ratio: 16 / 9;
+    align-self: flex-start;
 }
 
 .video-container-shorts {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    position: relative;
-    z-index: 3;
+
 }
 
 .ShortsWindow video {
@@ -99,21 +106,20 @@
 .ShortsDropdown {
     position: relative;
     width: 200px;
-    flex-shrink: 1;
+    flex-shrink: 0;
+    align-self: flex-start;
 }
 
 .dropdown-list-shorts {
-    position: absolute;
-    top: 100%;
+    position: relative;
+    top: 0;
     left: 0;
-    width: 180px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
     padding: 10px;
     z-index: 100;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -125,8 +131,9 @@
 }
 
 .dropdown-list-shorts.open {
-    max-height: 500px;
+    max-height: none;
     opacity: 1;
+    overflow: visible;
     transform: translateY(0);
 }
 

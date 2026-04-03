@@ -9,19 +9,17 @@ html, body {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  box-sizing: border-box;
-  padding: 10px 16px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
 }
 
 .home-icon {
@@ -47,11 +45,11 @@ nav {
 }
 
 .Navbar-links-container {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  overflow: hidden;
-  margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    overflow: visible;
+    margin-left: auto;
 }
 
 @media (max-width: 768px) {
@@ -140,16 +138,13 @@ nav {
 }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-
-  flex-direction: column;
-  gap: 6px;
-  padding: 8px;
-  border-radius: 10px;
-  z-index: 100;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 10px;
 }
 
 .dropdown-container:hover .dropdown-menu {

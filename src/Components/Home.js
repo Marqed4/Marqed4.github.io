@@ -38,7 +38,7 @@ const Home = () => {
           />
           <p>
             Welcome to my personal site — a space where I share my work, <br/>
-            explore ideas, and highlight the skills I bring to creative projects. <br/>
+            explore ideas, and highlight the skills I bring to projects. <br/>
             If you're hiring or interested in collaborating with me as a freelancer, <br/>
             be sure to check out the details page for more information. <br/>
           </p>
