@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f6b7ee0.css",
-    "main.js": "/static/js/main.134de809.js",
+    "main.css": "/static/css/main.f5704c74.css",
+    "main.js": "/static/js/main.8e8600a0.js",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Contacts Orange Marble Gradient.gif": "/static/media/Contacts Orange Marble Gradient.1cb0cf711ae780a8c7b4.gif",
@@ -34,20 +34,25 @@
     "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
     "static/media/Editing Software Details Inactive.gif": "/static/media/Editing Software Details Inactive.b0e022715db76989a352.gif",
     "static/media/Hide Content Active.gif": "/static/media/Hide Content Active.c21f994244bf9efac8c9.gif",
+    "static/media/Custom Calendar.gif": "/static/media/Custom Calendar.ee4addb40d0564096838.gif",
     "static/media/Preview Content Inactive.gif": "/static/media/Preview Content Inactive.d16692bf65ace2866865.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
+    "static/media/Architecture Inactive.gif": "/static/media/Architecture Inactive.69b48919b32edc538d51.gif",
     "static/media/Education Details Inactive.gif": "/static/media/Education Details Inactive.c00e95698a423ca1dbaf.gif",
     "static/media/Interests Details Inactive.gif": "/static/media/Interests Details Inactive.c06a80267e8211287a06.gif",
+    "static/media/Overview Inactive.gif": "/static/media/Overview Inactive.c75b2b64b3120c3c02a9.gif",
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
+    "static/media/Features Inactive.gif": "/static/media/Features Inactive.7bd304528f3a8ab8848d.gif",
     "static/media/Start Header.gif": "/static/media/Start Header.6246cb3bfaf1cac3d6b4.gif",
+    "static/media/Made Inactive.gif": "/static/media/Made Inactive.da9e19063538fdb3d0d4.gif",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.5f6b7ee0.css.map": "/static/css/main.5f6b7ee0.css.map",
-    "main.134de809.js.map": "/static/js/main.134de809.js.map"
+    "main.f5704c74.css.map": "/static/css/main.f5704c74.css.map",
+    "main.8e8600a0.js.map": "/static/js/main.8e8600a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f6b7ee0.css",
-    "static/js/main.134de809.js"
+    "static/css/main.f5704c74.css",
+    "static/js/main.8e8600a0.js"
   ]
 }
