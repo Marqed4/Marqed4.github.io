@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import UnfoundPage from "./Components/UnfoundPage.jsx";
 
 // <---- Landing Page ---->
 import './HomeNavbar.css';
@@ -13,15 +14,21 @@ import './MediaPreviews.css';
 import Home from "./Components/Home";
 
 // <---- Details Page ---->
-import Details from "./Components/Details";
 import './Details.css';
-import MediaPreviews from "./Components/MediaPreviews";
+import Details from "./Components/Details";
+
+// <---- Custom Calendar Proj Page ---->
+import './CustomCalendar.css';
+import CustomCalendar from "./Components/CustomCalendar";
 
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/details" element={<Details />} />
+      <Route path="/CustomCalendar" element={<CustomCalendar />} />
+
+      <Route path="*" element={<UnfoundPage />} />
     </Routes>
   );
 };

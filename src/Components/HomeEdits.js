@@ -33,7 +33,7 @@ const HomeEdits = ({ isOpen, onToggle, onVideoActive }) => {
         { label: "Two Sixty", 
             src: "https://www.youtube.com/embed/9mwm132viYc?autoplay=1", 
             thumbnail: "https://img.youtube.com/vi/9mwm132viYc/0.jpg" },
-        { label: "Two Sixty", 
+        { label: "Lonely LFG Gamer", 
             src: "https://www.youtube.com/embed/4iea-bE19Ck?autoplay=1", 
             thumbnail: "https://img.youtube.com/vi/4iea-bE19Ck/0.jpg" },
     ];

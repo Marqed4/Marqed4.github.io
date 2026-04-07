@@ -5,6 +5,7 @@ import introheader from "../Resources/art/Background Project/Gradients/Name Head
 import startheader from "../Resources/art/Background Project/Gradients/Start Header.gif"
 import Navbar from "./Navbar.js"
 import MediaPreviews from "./MediaPreviews.js"
+import CustomCalendar from "./CustomCalendar.js"
 
 const Home = () => {
 
@@ -23,8 +24,7 @@ const Home = () => {
           <img 
             src={introheader}
             alt="hey"
-            className="intro-header"
-          />
+            className="my-name-header"/>
           <p>
             Content creator and developer based out of Brooklyn, New York. <br/>
             I make YouTube edits, shorts, mods, apps, websites, and much more! <br/>
@@ -34,8 +34,7 @@ const Home = () => {
           <img 
             src={startheader}
             alt="start"
-            className="start-header"
-          />
+            className="start-header"/>
           <p>
             Welcome to my personal site — a space where I share my work, <br/>
             explore ideas, and highlight the skills I bring to projects. <br/>
@@ -43,7 +42,7 @@ const Home = () => {
             be sure to check out the details page for more information. <br/>
           </p>
         </div>
-        <MediaPreviews />
+        <MediaPreviews/>
       </div>
     </>
   );

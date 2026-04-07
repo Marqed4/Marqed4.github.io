@@ -33,7 +33,7 @@ body::before {
   z-index: -1;
 }
 
-.intro-header {
+.my-name-header {
   flex: auto;
   display: flex;
   flex-direction: column;
