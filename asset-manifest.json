@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f5704c74.css",
-    "main.js": "/static/js/main.8e8600a0.js",
+    "main.css": "/static/css/main.35cf5dbf.css",
+    "main.js": "/static/js/main.302d0647.js",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Contacts Orange Marble Gradient.gif": "/static/media/Contacts Orange Marble Gradient.1cb0cf711ae780a8c7b4.gif",
@@ -9,12 +9,20 @@
     "static/media/Coding Lang Frameworks Orange Marble Gradient.gif": "/static/media/Coding Lang Frameworks Orange Marble Gradient.e4f444c3a6e32b3a17a1.gif",
     "static/media/Education Orange Marble Gradient.gif": "/static/media/Education Orange Marble Gradient.4c2487a1b63c29f79cf4.gif",
     "static/media/Editing Software Orange Marble Gradient.gif": "/static/media/Editing Software Orange Marble Gradient.447f93764cabdc75f2a1.gif",
+    "static/media/Home Active.gif": "/static/media/Home Active.152ec3c7e2249df8c012.gif",
+    "static/media/GitHub Active.gif": "/static/media/GitHub Active.df899777412762272c12.gif",
     "static/media/Down Arrow Orange Marble Gradient.gif": "/static/media/Down Arrow Orange Marble Gradient.3b2f986843aeb7976a86.gif",
+    "static/media/YouTube Active.gif": "/static/media/YouTube Active.e7542e1bf24637480aab.gif",
     "static/media/Orange Glob Marble Head.gif": "/static/media/Orange Glob Marble Head.d17b65c0a56acc38984c.gif",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
     "static/media/Leni.mp3": "/static/media/Leni.cb37632fdd903dca91e1.mp3",
     "static/media/OnlinePersona.mp3": "/static/media/OnlinePersona.bc15bbaf551e258353ac.mp3",
+    "static/media/GitHub Inactive.gif": "/static/media/GitHub Inactive.4e4341157d2428fcd2e9.gif",
+    "static/media/Home Inactive.gif": "/static/media/Home Inactive.a97b2094f17c52853608.gif",
+    "static/media/Details Active.gif": "/static/media/Details Active.7c76448e4129d15f34f6.gif",
+    "static/media/Details Inactive.gif": "/static/media/Details Inactive.9b1d58e04df8b9197752.gif",
+    "static/media/YouTube Inactive.gif": "/static/media/YouTube Inactive.233842c28ee82a6dcfe7.gif",
     "static/media/YouTube Navbar Active.gif": "/static/media/YouTube Navbar Active.7e883cb6211699efe83b.gif",
     "static/media/Details Navbar Active.gif": "/static/media/Details Navbar Active.322f34d541d27a5717f2.gif",
     "static/media/GitHub Navbar Active.gif": "/static/media/GitHub Navbar Active.083b6cfb3e87b1ef8501.gif",
@@ -28,7 +36,6 @@
     "static/media/GitHub Navbar Inactive.gif": "/static/media/GitHub Navbar Inactive.102c2f67a6fe8ea5901a.gif",
     "static/media/Edits Navbar Active.gif": "/static/media/Edits Navbar Active.53c5d7f703854c3b29ef.gif",
     "static/media/Shorts Navbar Inactive.gif": "/static/media/Shorts Navbar Inactive.2235ceed25564ec83c16.gif",
-    "static/media/Name Header.gif": "/static/media/Name Header.1654a7bbf0530b7d22fb.gif",
     "static/media/Show Edits Inactive.gif": "/static/media/Show Edits Inactive.68e44fd9296d2c48fdb0.gif",
     "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
     "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
@@ -43,16 +50,14 @@
     "static/media/Overview Inactive.gif": "/static/media/Overview Inactive.c75b2b64b3120c3c02a9.gif",
     "static/media/Contacts Details Inactive.gif": "/static/media/Contacts Details Inactive.45fc53a4389f16851a84.gif",
     "static/media/Features Inactive.gif": "/static/media/Features Inactive.7bd304528f3a8ab8848d.gif",
-    "static/media/Start Header.gif": "/static/media/Start Header.6246cb3bfaf1cac3d6b4.gif",
     "static/media/Made Inactive.gif": "/static/media/Made Inactive.da9e19063538fdb3d0d4.gif",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
-    "static/media/GitHub.png": "/static/media/GitHub.4eff9dca095e47cff9a7.png",
     "index.html": "/index.html",
-    "main.f5704c74.css.map": "/static/css/main.f5704c74.css.map",
-    "main.8e8600a0.js.map": "/static/js/main.8e8600a0.js.map"
+    "main.35cf5dbf.css.map": "/static/css/main.35cf5dbf.css.map",
+    "main.302d0647.js.map": "/static/js/main.302d0647.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5704c74.css",
-    "static/js/main.8e8600a0.js"
+    "static/css/main.35cf5dbf.css",
+    "static/js/main.302d0647.js"
   ]
 }
