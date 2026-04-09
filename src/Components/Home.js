@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 
-import bannerbackground from "../Resources/art/Background Project/Gradients/Orange Glob Marble.gif"
-import introheader from "../Resources/art/Background Project/Gradients/Name Header.gif"
-import startheader from "../Resources/art/Background Project/Gradients/Start Header.gif"
+import bannerbackground from "../resources/art/Background Project/Gradients/Orange Glob Marble.gif"
 import Navbar from "./Navbar.js"
 import MediaPreviews from "./MediaPreviews.js"
 import CustomCalendar from "./CustomCalendar.js"
@@ -17,32 +15,23 @@ const Home = () => {
     <>
       <div className="home-container">
         <Navbar/>
-        <div className="home-banner-container">
-          <img src={bannerbackground} alt="" />
-        </div>
-        <div className="home-name-text-container">
-          <img 
-            src={introheader}
-            alt="hey"
-            className="my-name-header"/>
-          <p>
-            Content creator and developer based out of Brooklyn, New York. <br/>
-            I make YouTube edits, shorts, mods, apps, websites, and much more! <br/>
-            This is my corner of the internet — have a look around.
-          </p>
+        <img src={bannerbackground} alt="" className="home-banner-bg" />
 
-          <img 
-            src={startheader}
-            alt="start"
-            className="start-header"/>
-          <p>
-            Welcome to my personal site — a space where I share my work, <br/>
-            explore ideas, and highlight the skills I bring to projects. <br/>
-            If you're hiring or interested in collaborating with me as a freelancer, <br/>
-            be sure to check out the details page for more information. <br/>
-          </p>
+        <div className="home-content">
+          <div className="home-card">
+            <p>
+            Hey, I’m Zach — most people online know me as Marqed.<br /><br />
+            This is my personal website, where I share my work and projects as an aspiring professional developer & video editor.<br /><br />
+            
+            On this site, you can find a selection of my video edits, as well as some of my coding projects and other creative endeavors.
+            </p>
+          </div>
+          <div className="home-card">
+            <p>
+            Thanks for stopping by, and I hope you enjoy exploring this site!
+            </p>
+          </div>
         </div>
-        <MediaPreviews/>
       </div>
     </>
   );

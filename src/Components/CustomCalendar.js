@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js"
 
-import CustomCalendarLogo from "../Resources/art/Background Project/Gradients/Custom Calendar.gif"
-import Made from "../Resources/art/Background Project/Gradients/Made Inactive.gif"
-import Overview from "../Resources/art/Background Project/Gradients/Overview Inactive.gif"
-import Features from "../Resources/art/Background Project/Gradients/Features Inactive.gif"
-import Architecture from "../Resources/art/Background Project/Gradients/Architecture Inactive.gif"
+import CustomCalendarLogo from "../resources/art/Background Project/Gradients/Custom Calendar.gif"
+import Made from "../resources/art/Background Project/Gradients/Made Inactive.gif"
+import Overview from "../resources/art/Background Project/Gradients/Overview Inactive.gif"
+import Features from "../resources/art/Background Project/Gradients/Features Inactive.gif"
+import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif"
 
 const CustomCalendar = () => {
 
@@ -76,7 +76,6 @@ const CustomCalendar = () => {
             Calendar Logic (Java/JDK)
           </p>
         </div>
-
       </div>
     </div>
   );

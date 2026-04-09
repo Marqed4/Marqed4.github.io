@@ -8,11 +8,10 @@ body {
     #E8C3A3 70%,
     #D9B394 100%
   );
-
   background-size: 400% 400%;
   animation: gradientShift 30s ease infinite;
   position: relative;
-   overflow-y: auto;
+  overflow-y: auto;
 }
 
 @keyframes gradientShift {
@@ -25,47 +24,24 @@ body::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  width: 200%; 
+  width: 200%;
   height: 200%;
-  background-image: url("./Resources/art/Background Project/Gradients/Opal Grain.gif");
+  background-image: url("./resources/art/Background Project/Gradients/Opal Grain.gif");
   opacity: 0.15;
   pointer-events: none;
   z-index: -1;
 }
 
 .my-name-header {
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: -3rem;
-  margin-left: -3rem;
-  padding-top: 90px;
+  height: 90px;
+  width: auto;
+  display: block;
+  margin: 0 0 12px 0;
 }
 
 .start-header {
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  width: 100%;
-  max-width: 400px;
-  margin-top: -4.5rem;
-  margin-bottom: -3rem;
-  margin-left: -9rem;
-  padding-top: 40px;
-}
-
-.home-name-text-container {
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
-  width: 100%;
-
+  height: 90px;
+  width: auto;
+  display: block;
+  margin: 0 0 12px 0;
 }

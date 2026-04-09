@@ -1,55 +1,74 @@
-import { useState, useRef} from "react";
+import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../Resources/art/Background Project/Gradients/Orange Glob Marble Head.gif"
+import Logo from "../resources/art/Background Project/Gradients/Orange Glob Marble Head.gif"
 
-import GospelAudio from "../Resources/sound/Gospel.mp3";
-import SpellAudio from "../Resources/sound/Spell.mp3";
-import LeniAudio from "../Resources/sound/Leni.mp3";
-import OnlinePersonaAudio from "../Resources/sound/OnlinePersona.mp3"
+import GospelAudio from "../resources/sound/Gospel.mp3";
+import SpellAudio from "../resources/sound/Spell.mp3";
+import LeniAudio from "../resources/sound/Leni.mp3";
+import OnlinePersonaAudio from "../resources/sound/OnlinePersona.mp3"
 
-import HomeIcon from "../Resources/art/Home.png";
-import HomeNavbarActive from "../Resources/art/Background Project/Gradients/Home Navbar Active.gif"
-import HomeNavbarInactive from "../Resources/art/Background Project/Gradients/Home Navbar Inactive.gif"
+import HomeNavbarActive from "../resources/art/navbar graffiti/Home Navbar Active.gif";
+import HomeNavbarInactive from "../resources/art/navbar graffiti/Home Navbar Inactive.gif";
+import DetailsNavbarActive from "../resources/art/navbar graffiti/Details Navbar Active.gif";
+import DetailsNavbarInactive from "../resources/art/navbar graffiti/Details Navbar Inactive.gif";
+import YoutubeNavbarActive from "../resources/art/navbar graffiti/YouTube Navbar Active.gif";
+import YoutubeNavbarInactive from "../resources/art/navbar graffiti/YouTube Navbar Inactive.gif";
+import GithubNavbarActive from "../resources/art/navbar graffiti/GitHub Navbar Active.gif";
+import GithubNavbarInactive from "../resources/art/navbar graffiti/GitHub Navbar Inactive.gif";
+import EditsNavbarActive from "../resources/art/navbar graffiti/Edits Navbar Active.gif";
+import EditsNavbarInactive from "../resources/art/navbar graffiti/Edits Navbar Inactive.gif";
+import ShortsNavbarActive from "../resources/art/navbar graffiti/Shorts Navbar Active.gif";
+import ShortsNavbarInactive from "../resources/art/navbar graffiti/Shorts Navbar Inactive.gif";
 
-import DetailsIcon from "../Resources/art/Details.png";
-import DetailsNavbarActive from "../Resources/art/Background Project/Gradients/Details Navbar Active.gif"
-import DetailsNavbarInactive from "../Resources/art/Background Project/Gradients/Details Navbar Inactive.gif"
+import HomeIconActive from "../resources/art/navbar emoji/Home Active.gif";
+import HomeIconInactive from "../resources/art/navbar emoji/Home Inactive.gif";
+import DetailsIconActive from "../resources/art/navbar emoji/Details Active.gif";
+import DetailsIconInactive from "../resources/art/navbar emoji/Details Inactive.gif";
+import YoutubeIconActive from "../resources/art/navbar emoji/YouTube Active.gif";
+import YoutubeIconInactive from "../resources/art/navbar emoji/YouTube Inactive.gif";
+import GithubIconActive from "../resources/art/navbar emoji/GitHub Active.gif";
+import GithubIconInactive from "../resources/art/navbar emoji/GitHub Inactive.gif";
 
-import YoutubeIcon from "../Resources/art/Youtube.png";
-import YoutubeNavbarActive from "../Resources/art/Background Project/Gradients/YouTube Navbar Active.gif"
-import YoutubeNavbarInactive from "../Resources/art/Background Project/Gradients/YouTube Navbar Inactive.gif"
-import EditsNavbarInactive from "../Resources/art/Background Project/Gradients/Edits Navbar Inactive.gif"
-import EditsNavbarActive from "../Resources/art/Background Project/Gradients/Edits Navbar Active.gif"
-import ShortsNavbarInactive from "../Resources/art/Background Project/Gradients/Shorts Navbar Inactive.gif"
-import ShortsNavbarActive from "../Resources/art/Background Project/Gradients/Shorts Navbar Active.gif"
+// Renders a label gif with an emoji icon absolutely overlaid on top
+function NavItem({ labelActive, labelInactive, iconActive, iconInactive, labelClass, iconClass, hovered }) {
+  return (
+    <span style={{ position: "relative", display: "inline-flex", flexShrink: 0, pointerEvents: "none" }}>
+      {/* Label */}
+      <img
+        src={hovered ? labelActive : labelInactive}
+        alt=""
+        className={labelClass}
+        style={{ display: "block", pointerEvents: "none" }}
+      />
+      {/* Icon overlaid absolutely so it doesn't affect layout */}
+      <img
+        src={hovered ? iconActive : iconInactive}
+        alt=""
+        className={iconClass}
+        style={{ position: "absolute", pointerEvents: "none" }}
+      />
+    </span>
+  );
+}
 
-import GitHubIcon from "../Resources/art/GitHub.png";
-import GithubNavbarActive from "../Resources/art/Background Project/Gradients/GitHub Navbar Active.gif"
-import GithubNavbarInactive from "../Resources/art/Background Project/Gradients/GitHub Navbar Inactive.gif"
-
-
-const Navbar = () => 
-{
+const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [homeNavbarGif, setHomeNavbarGif] = useState(HomeNavbarInactive);
-  const [detailsNavbarGif, setDetailsNavbarGif] = useState(DetailsNavbarInactive);
-  const [youtubeNavbarGif, setYoutubeNavbarGif] = useState(YoutubeNavbarInactive);
-  const [editsNavbarGif, setEditsNavbarGif] = useState(EditsNavbarInactive);
-  const [shortsNavbarGif, setShortsNavbarGif] = useState(ShortsNavbarInactive);
-  const [githubNavbarGif, setGithubNavbarGif] = useState(GithubNavbarInactive);
+  const [homeHovered, setHomeHovered] = useState(false);
+  const [detailsHovered, setDetailsHovered] = useState(false);
+  const [youtubeHovered, setYoutubeHovered] = useState(false);
+  const [githubHovered, setGithubHovered] = useState(false);
+  const [editsHovered, setEditsHovered] = useState(false);
+  const [shortsHovered, setShortsHovered] = useState(false);
 
-  const SpellRef = useRef(null)
-  const GospelRef = useRef(null)
-  const LeniRef = useRef(null)
-  const OnlinePersonaRef = useRef(null)
+  const SpellRef = useRef(null);
+  const GospelRef = useRef(null);
+  const LeniRef = useRef(null);
+  const OnlinePersonaRef = useRef(null);
   const isPlayingRef = useRef(false);
 
-
-  const stopHoverAudio = () => 
-  {
-    [SpellRef, GospelRef, LeniRef, OnlinePersonaRef].forEach(ref => 
-    {
+  const stopHoverAudio = () => {
+    [SpellRef, GospelRef, LeniRef, OnlinePersonaRef].forEach(ref => {
       if (ref.current) {
         ref.current.pause();
         ref.current.currentTime = 0;
@@ -58,156 +77,155 @@ const Navbar = () =>
     isPlayingRef.current = false;
   };
 
-  const playOnlinePersona = () => 
-  {
-    stopHoverAudio();
-    OnlinePersonaRef.current = new Audio(OnlinePersonaAudio);
-    OnlinePersonaRef.current.volume = 0.05;
-    OnlinePersonaRef.current.play().then(() => 
-    {
-      isPlayingRef.current = true;
-    }).catch((err) => { console.log("Audio play failed:", err); });
-  };
-
-  const playGospel = () => 
-  {
+  const playGospel = () => {
     stopHoverAudio();
     GospelRef.current = new Audio(GospelAudio);
     GospelRef.current.volume = 0.05;
-    GospelRef.current.play().then(() => 
-    {
-      isPlayingRef.current = true;
-    }).catch((err) => { console.log("Audio play failed:", err); });
+    GospelRef.current.play().catch((err) => console.log("Audio play failed:", err));
   };
 
-  const playSpell = () => 
-  {
+  const playOnlinePersona = () => {
+    stopHoverAudio();
+    OnlinePersonaRef.current = new Audio(OnlinePersonaAudio);
+    OnlinePersonaRef.current.volume = 0.05;
+    OnlinePersonaRef.current.play().catch((err) => console.log("Audio play failed:", err));
+  };
+
+  const playSpell = () => {
     stopHoverAudio();
     SpellRef.current = new Audio(SpellAudio);
     SpellRef.current.volume = 0.03;
-    SpellRef.current.play().then(() => 
-    {
-      isPlayingRef.current = true;
-    }).catch((err) => { console.log("Audio play failed:", err); });
+    SpellRef.current.play().catch((err) => console.log("Audio play failed:", err));
   };
 
-  const playLeni = () => 
-  {
+  const playLeni = () => {
     stopHoverAudio();
     LeniRef.current = new Audio(LeniAudio);
     LeniRef.current.volume = 0.03;
-    LeniRef.current.play().then(() => 
-    {
-      isPlayingRef.current = true;
-    }).catch((err) => { console.log("Audio play failed:", err); });
+    LeniRef.current.play().catch((err) => console.log("Audio play failed:", err));
   };
 
   return (
     <>
-
-    <div className="home-icon">
-        <img src={Logo} alt=""/>
+      <div className="home-icon">
+        <img src={Logo} alt="" />
       </div>
 
-    <nav>
+      <nav>
+        {/* Desktop Menu */}
+        <div className="Navbar-links-container">
 
-      {/* The Desktop Menu */}
-      <div className="Navbar-links-container">
-
-        <a href="/" className="nav-btn"
-          onMouseEnter={() => { playGospel(); setHomeNavbarGif(HomeNavbarActive); }}
-          onMouseLeave={() => { stopHoverAudio(); setHomeNavbarGif(HomeNavbarInactive); }}
-        >
-          <img src={homeNavbarGif} className="home-button" alt="Home" />
-          <img src={HomeIcon} alt="Home" className="home-link-icon"/>
-        </a>
-
-        <Link to="/details" className="nav-btn"
-          onMouseEnter={() => { playOnlinePersona(); setDetailsNavbarGif(DetailsNavbarActive); }}
-          onMouseLeave={() => { stopHoverAudio(); setDetailsNavbarGif(DetailsNavbarInactive); }}
-          onClick={stopHoverAudio}
-        >
-          <img src={detailsNavbarGif} className="details-button" alt="Details" />
-          <img src={DetailsIcon} alt="Details" className="details-link-icon"/>
-        </Link>
-
-      <div className="dropdown-container"
-        onMouseEnter={() => { playSpell(); setYoutubeNavbarGif(YoutubeNavbarActive); }}
-        onMouseLeave={() => { stopHoverAudio(); setYoutubeNavbarGif(YoutubeNavbarInactive); }}
-        >
-      <a href="https://www.youtube.com/Marqed" className="nav-btn">
-        <img src={youtubeNavbarGif} className="youtube-button" alt="YouTube" />
-        <img src={YoutubeIcon} alt="YouTube" className="youtube-link-icon"/>
-      </a>
-        <div className="dropdown-menu">
-      <a href="https://www.youtube.com/Marqed/videos"
-        onMouseEnter={() => setEditsNavbarGif(EditsNavbarActive)}
-        onMouseLeave={() => setEditsNavbarGif(EditsNavbarInactive)}>
-    <img src={editsNavbarGif} className="edits-button" alt="Edits" />
-      </a>
-      <a href="https://www.youtube.com/Marqed/shorts"
-        onMouseEnter={() => setShortsNavbarGif(ShortsNavbarActive)}
-        onMouseLeave={() => setShortsNavbarGif(ShortsNavbarInactive)}>
-      <img src={shortsNavbarGif} className="shorts-button" alt="Shorts" />
-      </a>
-    </div>
-      </div>
-
-        <a href="https://github.com/Marqed4" className="nav-btn"
-          onMouseEnter={() => { playLeni(); setGithubNavbarGif(GithubNavbarActive); }}
-          onMouseLeave={() => { stopHoverAudio(); setGithubNavbarGif(GithubNavbarInactive); }}
-        >
-          <img src={githubNavbarGif} className="github-button" alt="GitHub" />
-          <img src={GitHubIcon} alt="GitHub" className="github-link-icon"/>
-        </a>
-
-      </div>
-
-      {/*only shows on small screens like iphone*/}
-      {/* Hamburger icon - only shows on small screens like iphone*/}
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
-      </div>
-
-      {/* The Dropdown Menu */}
-      {menuOpen && (
-        <div className="mobile-menu">
           <a href="/" className="nav-btn"
-            onClick={() => setMenuOpen(false)}
-            onMouseEnter={() => setHomeNavbarGif(HomeNavbarActive)}
-            onMouseLeave={() => setHomeNavbarGif(HomeNavbarInactive)}
+            onMouseEnter={() => { setHomeHovered(true); playGospel(); }}
+            onMouseLeave={() => { setHomeHovered(false); stopHoverAudio(); }}
           >
-            <img src={homeNavbarGif} className="home-button" alt="Home" />
-            <img src={HomeIcon} alt="Home" className="home-link-icon"/>
+            <NavItem
+              labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
+              iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
+              hovered={homeHovered}
+            />
           </a>
+
           <Link to="/details" className="nav-btn"
-            onClick={() => setMenuOpen(false)}
-            onMouseEnter={() => setDetailsNavbarGif(DetailsNavbarActive)}
-            onMouseLeave={() => setDetailsNavbarGif(DetailsNavbarInactive)}
+            onMouseEnter={() => { setDetailsHovered(true); playOnlinePersona(); }}
+            onMouseLeave={() => { setDetailsHovered(false); stopHoverAudio(); }}
+            onClick={stopHoverAudio}
           >
-            <img src={detailsNavbarGif} className="details-button" alt="Details" />
-            <img src={DetailsIcon} alt="Details" className="details-link-icon"/>
+            <NavItem
+              labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
+              iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
+              hovered={detailsHovered}
+            />
           </Link>
-          <a href="https://www.youtube.com/Marqed" className="nav-btn"
-            onClick={() => setMenuOpen(false)}
-            onMouseEnter={() => setYoutubeNavbarGif(YoutubeNavbarActive)}
-            onMouseLeave={() => setYoutubeNavbarGif(YoutubeNavbarInactive)}
+
+          <div className="dropdown-container"
+            onMouseEnter={() => { setYoutubeHovered(true); playSpell(); }}
+            onMouseLeave={() => { setYoutubeHovered(false); stopHoverAudio(); }}
           >
-            <img src={youtubeNavbarGif} className="youtube-button" alt="YouTube" />
-            <img src={YoutubeIcon} alt="YouTube" className="youtube-link-icon"/>
-          </a>
+            <a href="https://www.youtube.com/Marqed" className="nav-btn">
+              <NavItem
+                labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
+                iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
+                hovered={youtubeHovered}
+              />
+            </a>
+            <div className="dropdown-menu">
+              <a href="https://www.youtube.com/Marqed/videos"
+                onMouseEnter={() => setEditsHovered(true)}
+                onMouseLeave={() => setEditsHovered(false)}
+              >
+                <NavItem
+                  labelActive={EditsNavbarActive} labelInactive={EditsNavbarInactive} labelClass="edits-button"
+                  iconActive={EditsNavbarActive} iconInactive={EditsNavbarInactive} iconClass="edits-button"
+                  hovered={editsHovered}
+                />
+              </a>
+              <a href="https://www.youtube.com/Marqed/shorts"
+                onMouseEnter={() => setShortsHovered(true)}
+                onMouseLeave={() => setShortsHovered(false)}
+              >
+                <NavItem
+                  labelActive={ShortsNavbarActive} labelInactive={ShortsNavbarInactive} labelClass="shorts-button"
+                  iconActive={ShortsNavbarActive} iconInactive={ShortsNavbarInactive} iconClass="shorts-button"
+                  hovered={shortsHovered}
+                />
+              </a>
+            </div>
+          </div>
+
           <a href="https://github.com/Marqed4" className="nav-btn"
-            onClick={() => setMenuOpen(false)}
-            onMouseEnter={() => setGithubNavbarGif(GithubNavbarActive)}
-            onMouseLeave={() => setGithubNavbarGif(GithubNavbarInactive)}
+            onMouseEnter={() => { setGithubHovered(true); playLeni(); }}
+            onMouseLeave={() => { setGithubHovered(false); stopHoverAudio(); }}
           >
-            <img src={githubNavbarGif} className="github-button" alt="GitHub" />
-            <img src={GitHubIcon} alt="GitHub" className="github-link-icon"/>
+            <NavItem
+              labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
+              iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
+              hovered={githubHovered}
+            />
           </a>
+
         </div>
-      )}
-    </nav>
-  </>
+
+        {/* Hamburger - mobile only */}
+        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          ☰
+        </div>
+
+        {/* Mobile Dropdown */}
+        {menuOpen && (
+          <div className="mobile-menu">
+            <a href="/" className="nav-btn" onClick={() => setMenuOpen(false)}>
+              <NavItem
+                labelActive={HomeNavbarActive} labelInactive={HomeNavbarInactive} labelClass="home-button"
+                iconActive={HomeIconActive} iconInactive={HomeIconInactive} iconClass="home-link-icon"
+                hovered={homeHovered}
+              />
+            </a>
+            <Link to="/details" className="nav-btn" onClick={() => setMenuOpen(false)}>
+              <NavItem
+                labelActive={DetailsNavbarActive} labelInactive={DetailsNavbarInactive} labelClass="details-button"
+                iconActive={DetailsIconActive} iconInactive={DetailsIconInactive} iconClass="details-link-icon"
+                hovered={detailsHovered}
+              />
+            </Link>
+            <a href="https://www.youtube.com/Marqed" className="nav-btn" onClick={() => setMenuOpen(false)}>
+              <NavItem
+                labelActive={YoutubeNavbarActive} labelInactive={YoutubeNavbarInactive} labelClass="youtube-button"
+                iconActive={YoutubeIconActive} iconInactive={YoutubeIconInactive} iconClass="youtube-link-icon"
+                hovered={youtubeHovered}
+              />
+            </a>
+            <a href="https://github.com/Marqed4" className="nav-btn" onClick={() => setMenuOpen(false)}>
+              <NavItem
+                labelActive={GithubNavbarActive} labelInactive={GithubNavbarInactive} labelClass="github-button"
+                iconActive={GithubIconActive} iconInactive={GithubIconInactive} iconClass="github-link-icon"
+                hovered={githubHovered}
+              />
+            </a>
+          </div>
+        )}
+      </nav>
+    </>
   );
 };
 

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Latin";
-  src: url("./Resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
+  src: url("./resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
 html, body {
   overflow-x: hidden;
@@ -11,14 +11,15 @@ html, body {
 nav {
     position: fixed;
     top: 20px;
-    left: -45px;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
     z-index: 9999;
     box-sizing: border-box;
     padding: 10px 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background: transparent;
 }
 
@@ -73,49 +74,48 @@ nav {
 }
 
 
-.home-link-icon 
-{
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -25px;
-  z-index: 1;
-  margin-top: 0px;
+.home-link-icon {
+  position: absolute;
+  width: auto;
+  height: 45px;
+  left: 70px;
+  top: 40%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  pointer-events: none;
 }
 
-.details-link-icon
-{
-  position: relative;
-  width: 35px;
-  height: 30px;
-  vertical-align: right;
-  margin-left: -15px;
-  margin-top: 0px;
-  z-index: 1;
+.details-link-icon {
+  position: absolute;
+  width: auto;
+  height: 50px;
+  left: 75px;
+  top: 40%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  pointer-events: none;
 }
 
-.youtube-link-icon
-{
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -5px;
-  margin-top: 0px;
-  z-index: 1;
+.youtube-link-icon {
+  position: absolute;
+  width: auto;
+  height: 45px;
+  left: 85px;
+  top: 40%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  pointer-events: none;
 }
 
-.github-link-icon
-{
-  position: relative;
-  width: 35px;
-  height: 35px;
-  vertical-align: right;
-  margin-left: -15px;
-  margin-top: 0px;
-  z-index: 1;
-
+.github-link-icon {
+  position: absolute;
+  width: auto;
+  height: 45px;
+  left: 80px;
+  top: 40%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  pointer-events: none;
 }
 
 .nav-btn,

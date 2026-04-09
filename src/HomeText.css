@@ -1,67 +1,89 @@
 @font-face {
   font-family: "Latin";
-  src: url("./Resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
-}
-
-.home-layout {
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-  padding: 40px 30px;
-  max-width: 50px;
-  text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.home-name-text-container {
-  display: flex;
-  flex-direction: column;
-  top: 100px;
-  right: -25px;
-  position: relative;
-  transform: translateY(-50%);
-  z-index: 1;
-  color: rgb(0, 0, 0);
-  min-height: 0;
-  justify-content: space-evenly;
-  justify-content: center;
-}
-
-.home-name-text-container h1 {
-  font-size: 2.75rem;
-  margin-bottom: 0rem;
-  font-family: Latin;
-  /* animation: float 10.68s ease-in-out infinite; */
-  text-shadow: 0px 2px 4px rgba(200, 55, 105, 1.4);
-}
-
-.home-name-text-container p {
-  font-size: 1.2rem;
-  font-weight: 225;
-  -webkit-text-stroke: 1px black;
-  margin-top: 0rem;
-  font-family: 'Times New Roman', Times, serif;
-  /* animation: float 10s ease-in-out infinite; */
-}
-
-@keyframes float {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-6px); }
-  100% { transform: translateY(0); }
-}
-
-@media (max-width: 498px) {
-  .home-name-text-container {
-    height: 20%;
-  }
-}
-
-@media (max-width: 375px) {
-  .home-name-text-container {
-    max-width: 100%;
-  }
+  src: url("./resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
 
 .home-container {
   padding-top: 80px;
+  position: relative;
+}
+
+.home-banner-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 560px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  width: 380px;
+  transform: translateY(25px);
+}
+
+.home-card {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 5px 30px;
+  width: 550px;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow:
+    0px 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 1;
+}
+
+.home-section-header {
+  height: 90px;
+  width: auto;
+  display: block;
+  margin: -30px 0 10px 0;
+  position: relative;
+}
+
+.home-card p {
+  font-size: 1.2rem;
+  font-weight: 225;
+  -webkit-text-stroke: 1px black;
+  margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(0, 0, 0);
+}
+
+.media-preview-window {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow:
+    0px 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .home-banner-bg {
+    width: 300px;
+    opacity: 0.6;
+  }
+
+  .home-content {
+    max-width: 100%;
+    padding: 10px 15px;
+  }
 }

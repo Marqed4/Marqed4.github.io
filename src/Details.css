@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Latin";
-  src: url("./Resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
+  src: url("./resources/fonts/SouthCrew-VGw2e.ttf") format("truetype");
 }
 
 @keyframes float {
@@ -32,7 +32,7 @@
 }
 
 .details-layout-edu {
-  background-image: url('./Resources/art/Background Project/Gradients/Education Orange Marble Gradient.gif');
+  background-image: url('./resources/art/card artwork/Education Orange Marble Gradient.gif');
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -44,7 +44,7 @@
 }
 
 .details-layout-int {
-  background-image: url('./Resources/art/Background Project/Gradients/Interests Orange Marble Gradient.gif');
+  background-image: url('./resources/art/card artwork/Interests Orange Marble Gradient.gif');
   background-size: 300px;
   background-position: center;
   border-radius: 15px;
@@ -57,7 +57,7 @@
 }
 
 .details-layout-editing-software {
-  background-image: url('./Resources/art/Background Project/Gradients/Editing Software Orange Marble Gradient.gif');
+  background-image: url('./resources/art/card artwork/Editing Software Orange Marble Gradient.gif');
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -69,7 +69,7 @@
 }
 
 .details-layout-coding-lang-framework {
-    background-image: url('./Resources/art/Background Project/Gradients/Coding Lang Frameworks Orange Marble Gradient.gif');
+    background-image: url('./resources/art/card artwork/Coding Lang Frameworks Orange Marble Gradient.gif');
   background-size: cover;
   background-position: center;
   border-radius: 15px;
@@ -81,7 +81,7 @@
 }
 
 .details-layout-emails {
-  background-image: url('./Resources/art/Background Project/Gradients/Contacts Orange Marble Gradient.gif');
+  background-image: url('./resources/art/card artwork/Contacts Orange Marble Gradient.gif');
   background-position: center;
   background-size: 200px;
   border-radius: 15px;

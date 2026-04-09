@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js"
-import DetailsNavbarInactive from "../Resources/art/Background Project/Gradients/Details Navbar Inactive.gif"
-import ContactDetailsInactive from "../Resources/art/Background Project/Gradients/Contacts Details Inactive.gif"
-import EducationDetailsInactive from "../Resources/art/Background Project/Gradients/Education Details Inactive.gif"
-import InterestsDetailsInactive from "../Resources/art/Background Project/Gradients/Interests Details Inactive.gif"
-import EditingSoftwareDetailsInactive from "../Resources/art/Background Project/Gradients/Editing Software Details Inactive.gif"
-import CodingLangFrameworkDetailsInactive from "../Resources/art/Background Project/Gradients/Coding Languages Frameworks Details Inactive.gif"
+import DetailsNavbarInactive from "../resources/art/details page graphic headers/Details Navbar Inactive.gif"
+import ContactDetailsInactive from "../resources/art/details page graphic headers/Contacts Details Inactive.gif"
+import EducationDetailsInactive from "../resources/art/details page graphic headers/Education Details Inactive.gif"
+import InterestsDetailsInactive from "../resources/art/details page graphic headers/Interests Details Inactive.gif"
+import EditingSoftwareDetailsInactive from "../resources/art/details page graphic headers/Editing Software Details Inactive.gif"
+import CodingLangFrameworkDetailsInactive from "../resources/art/details page graphic headers/Coding Languages Frameworks Details Inactive.gif"
 
 const Details = () => {
 
