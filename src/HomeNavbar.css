@@ -9,18 +9,17 @@ html, body {
 }
 
 nav {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: fit-content;
-    z-index: 9999;
-    box-sizing: border-box;
-    padding: 10px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: transparent;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 10px 16px;
+  background: transparent;
+  box-sizing: border-box;
 }
 
 .home-icon {
@@ -46,11 +45,11 @@ nav {
 }
 
 .Navbar-links-container {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    overflow: visible;
-    margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  overflow: visible;
+  /* no margin, no auto, no width */
 }
 
 @media (max-width: 768px) {
@@ -155,12 +154,15 @@ nav {
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  margin-left: auto;
+  /* no margin-left: auto */
 }
 
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+  }
+  .Navbar-links-container {
+    display: none;
   }
 }
 
@@ -195,4 +197,3 @@ nav {
 .mobile-menu a:hover {
   color: #8400ff;
 }
-

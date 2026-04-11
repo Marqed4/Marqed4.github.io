@@ -41,7 +41,7 @@ function NavItem({ labelActive, labelInactive, iconActive, iconInactive, labelCl
         className={labelClass}
         style={{ display: "block", pointerEvents: "none" }}
       />
-      {/* Icon overlaid absolutely so it doesn't affect layout */}
+      
       <img
         src={hovered ? iconActive : iconInactive}
         alt=""

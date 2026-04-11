@@ -21,13 +21,17 @@ import Details from "./Components/Details";
 import './CustomCalendar.css';
 import CustomCalendar from "./Components/CustomCalendar";
 
+// <---- Resume Page ---->
+import './Resume.css';
+import Resume from "./Components/Resume";
+
 const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/details" element={<Details />} />
+      <Route path="/Resume" element={<Resume />} />
       <Route path="/CustomCalendar" element={<CustomCalendar />} />
-
       <Route path="*" element={<UnfoundPage />} />
     </Routes>
   );
