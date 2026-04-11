@@ -1,14 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.35cf5dbf.css",
-    "main.js": "/static/js/main.302d0647.js",
+    "main.css": "/static/css/main.6917e8a1.css",
+    "main.js": "/static/js/main.87b70656.js",
     "static/media/Opal Grain.gif": "/static/media/Opal Grain.aee24e5220806706ad8b.gif",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
-    "static/media/Contacts Orange Marble Gradient.gif": "/static/media/Contacts Orange Marble Gradient.1cb0cf711ae780a8c7b4.gif",
-    "static/media/Interests Orange Marble Gradient.gif": "/static/media/Interests Orange Marble Gradient.1104639765fef11e5448.gif",
-    "static/media/Coding Lang Frameworks Orange Marble Gradient.gif": "/static/media/Coding Lang Frameworks Orange Marble Gradient.e4f444c3a6e32b3a17a1.gif",
-    "static/media/Education Orange Marble Gradient.gif": "/static/media/Education Orange Marble Gradient.4c2487a1b63c29f79cf4.gif",
-    "static/media/Editing Software Orange Marble Gradient.gif": "/static/media/Editing Software Orange Marble Gradient.447f93764cabdc75f2a1.gif",
     "static/media/Home Active.gif": "/static/media/Home Active.152ec3c7e2249df8c012.gif",
     "static/media/GitHub Active.gif": "/static/media/GitHub Active.df899777412762272c12.gif",
     "static/media/Down Arrow Orange Marble Gradient.gif": "/static/media/Down Arrow Orange Marble Gradient.3b2f986843aeb7976a86.gif",
@@ -30,7 +25,6 @@
     "static/media/Shorts Navbar Active.gif": "/static/media/Shorts Navbar Active.452da1ec1ecfbecbb188.gif",
     "static/media/YouTube Navbar Inactive.gif": "/static/media/YouTube Navbar Inactive.bb6aa8de617ccdb1e250.gif",
     "static/media/Hide Edits Active.gif": "/static/media/Hide Edits Active.941369ca28604fa60205.gif",
-    "static/media/Coding Languages Frameworks Details Inactive.gif": "/static/media/Coding Languages Frameworks Details Inactive.67fa46c9679b28ea2f62.gif",
     "static/media/Details Navbar Inactive.gif": "/static/media/Details Navbar Inactive.4d2d0c2ab775424cce3a.gif",
     "static/media/Show Shorts Inactive.gif": "/static/media/Show Shorts Inactive.f297cdd858fe0c27a98a.gif",
     "static/media/GitHub Navbar Inactive.gif": "/static/media/GitHub Navbar Inactive.102c2f67a6fe8ea5901a.gif",
@@ -41,10 +35,12 @@
     "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
     "static/media/Editing Software Details Inactive.gif": "/static/media/Editing Software Details Inactive.b0e022715db76989a352.gif",
     "static/media/Hide Content Active.gif": "/static/media/Hide Content Active.c21f994244bf9efac8c9.gif",
+    "static/media/Tech Stack.gif": "/static/media/Tech Stack.e6a1b6044ddd86405760.gif",
     "static/media/Custom Calendar.gif": "/static/media/Custom Calendar.ee4addb40d0564096838.gif",
     "static/media/Preview Content Inactive.gif": "/static/media/Preview Content Inactive.d16692bf65ace2866865.gif",
     "static/media/Home Navbar Inactive.gif": "/static/media/Home Navbar Inactive.b24dde13f34fa530f1a4.gif",
     "static/media/Architecture Inactive.gif": "/static/media/Architecture Inactive.69b48919b32edc538d51.gif",
+    "static/media/Resume Details Inactive.gif": "/static/media/Resume Details Inactive.1bb417219fea5cade858.gif",
     "static/media/Education Details Inactive.gif": "/static/media/Education Details Inactive.c00e95698a423ca1dbaf.gif",
     "static/media/Interests Details Inactive.gif": "/static/media/Interests Details Inactive.c06a80267e8211287a06.gif",
     "static/media/Overview Inactive.gif": "/static/media/Overview Inactive.c75b2b64b3120c3c02a9.gif",
@@ -53,11 +49,11 @@
     "static/media/Made Inactive.gif": "/static/media/Made Inactive.da9e19063538fdb3d0d4.gif",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.35cf5dbf.css.map": "/static/css/main.35cf5dbf.css.map",
-    "main.302d0647.js.map": "/static/js/main.302d0647.js.map"
+    "main.6917e8a1.css.map": "/static/css/main.6917e8a1.css.map",
+    "main.87b70656.js.map": "/static/js/main.87b70656.js.map"
   },
   "entrypoints": [
-    "static/css/main.35cf5dbf.css",
-    "static/js/main.302d0647.js"
+    "static/css/main.6917e8a1.css",
+    "static/js/main.87b70656.js"
   ]
 }
