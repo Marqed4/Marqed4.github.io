@@ -42,7 +42,7 @@ const Details = () => {
                 <u>View Resume</u>
               </a>
               <br/>
-              <a href="/documents/ATS Friendly Resume.pdf" download>
+              <a href="/documents/Zache Franci ATS Rep Resume.pdf" download>
                 <u>Download Resume</u>
               </a>
             </p>
