@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import UnfoundPage from "./Components/UnfoundPage.jsx";
 
 import './App.css';
@@ -36,6 +38,10 @@ import Gallery from "./Components/Gallery";
 import './Components/Resume.css';
 import Resume from "./Components/Resume";
 
+// <---- Diva FFMPEG Page ---->
+import './Components/DivaFFMPEG.css';
+import DivaFFMPEG from "./Components/DivaFFMPEG.js";
+
 // <---- Sudoku Proj Page ---->
 import './Components/SolveSudoku.css';
 import Sudoku from "./Components/SolveSudoku.js";
@@ -58,23 +64,53 @@ import CodePath from "./Components/CodePath.js";
 
 import DefaultBackground from "./resources/art/Background Project/Gradients/Site.gif";
 
-const App = () => (
-  <>
-    <img src={DefaultBackground} alt="" className="home-bg" />
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/Details" element={<Details/>} />
-      <Route path="/Resume" element={<Resume/>} />
-      <Route path="/Projects" element={<Projects/>} />
-      <Route path="/Gallery" element={<Gallery/>} />
-      <Route path="/Calisigh" element={<Calisigh/>} />
-      <Route path="/PopularVote" element={<PopularVote/>} />
-      <Route path="/Sudoku" element={<Sudoku/>} />
-      <Route path="/TimeRabbit" element={<TimeRabbit/>} />
-      <Route path="/CodePath" element={<CodePath/>} />
-      <Route path="*" element={<UnfoundPage/>} />
-    </Routes>
-  </>
-);
+const App = () => {
+  const rawX = useMotionValue(0);
+  const rawY = useMotionValue(0);
+  const springConfig = { stiffness: 40, damping: 20, mass: 0.5 };
+  const x = useSpring(rawX, springConfig);
+  const y = useSpring(rawY, springConfig);
+
+  const bgX = useTransform(x, (v) => v * -14);
+  const bgY = useTransform(y, (v) => v * -14);
+  const contentX = useTransform(x, (v) => v * -50);
+  const contentY = useTransform(y, (v) => v * -50);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      rawX.set(e.clientX / window.innerWidth - 0.5);
+      rawY.set(e.clientY / window.innerHeight - 0.5);
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, [rawX, rawY]);
+
+  return (
+    <>
+      <motion.img
+        src={DefaultBackground}
+        alt=""
+        className="home-bg"
+        style={{ x: bgX, y: bgY }}
+      />
+      <motion.div style={{ x: contentX, y: contentY }}>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/Details" element={<Details/>} />
+          <Route path="/Resume" element={<Resume/>} />
+          <Route path="/Projects" element={<Projects/>} />
+          <Route path="/Gallery" element={<Gallery/>} />
+          <Route path="/TimeRabbit" element={<TimeRabbit/>} />
+          <Route path="/Calisigh" element={<Calisigh/>} />
+          <Route path="/PopularVote" element={<PopularVote/>} />
+          <Route path="/Sudoku" element={<Sudoku/>} />
+          <Route path="/DivaFFMPEG" element={<DivaFFMPEG/>} />
+          <Route path="/CodePath" element={<CodePath/>} />
+          <Route path="*" element={<UnfoundPage/>} />
+        </Routes>
+      </motion.div>
+    </>
+  );
+};
 
 export default App;

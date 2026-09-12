@@ -24,6 +24,48 @@
   pointer-events: none;
 }
 
+/* Mirrored extensions of the banner gif, so parallax drift past the
+   top/right edges reveals a seamless reflection instead of blank space. */
+.home-banner-mirror-top,
+.home-banner-mirror-right,
+.home-banner-mirror-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 560px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-banner-mirror-top img,
+.home-banner-mirror-right img,
+.home-banner-mirror-corner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-banner-mirror-top {
+  transform: translateY(-100%);
+}
+.home-banner-mirror-top img {
+  transform: scaleY(-1);
+}
+
+.home-banner-mirror-right {
+  transform: translateX(100%);
+}
+.home-banner-mirror-right img {
+  transform: scaleX(-1);
+}
+
+.home-banner-mirror-corner {
+  transform: translate(100%, -100%);
+}
+.home-banner-mirror-corner img {
+  transform: scale(-1, -1);
+}
+
 .home-banner-container {
   position: absolute;
   top: 0;
@@ -101,8 +143,20 @@
 }
 
 @media (max-width: 768px) {
-  .home-banner-bg {
+  .home-banner-bg,
+  .home-banner-mirror-top,
+  .home-banner-mirror-right,
+  .home-banner-mirror-corner {
     width: 300px;
+  }
+
+  .home-banner-bg {
+    opacity: 0.6;
+  }
+
+  .home-banner-mirror-top img,
+  .home-banner-mirror-right img,
+  .home-banner-mirror-corner img {
     opacity: 0.6;
   }
 

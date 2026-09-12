@@ -19,36 +19,36 @@ const videos = [
 
 const CodePath = () => {
 
-  useEffect(() => {
-    document.title = "CodePath";
-  }, []);
+    useEffect(() => {
+        document.title = "CodePath";
+    }, []);
 
-  return (
+    return (
     <>
-      <div className="codepath-container">
-        <HomeIcon />
-        <Navbar />
+        <div className="codepath-container">
+            <HomeIcon />
+            <Navbar />
 
-        {/* Tha video embeds */}
-        <div className="codepath-video-row">
-          {videos.map((video) => (
-            <div key={video.label} className="codepath-video-item">
-              <div className="codepath-video-frame">
-                <iframe
-                  src={video.src}
-                  title={video.label}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-              <h2 className="codepath-video-title">{video.label}</h2>
-              <p className="codepath-video-description">{video.description}</p>
+            {/* Tha video embeds */}
+            <div className="codepath-video-row">
+            {videos.map((video) => (
+                <div key={video.label} className="codepath-video-item">
+                <div className="codepath-video-frame">
+                    <iframe
+                    src={video.src}
+                    title={video.label}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    />
+                </div>
+                <h2 className="codepath-video-title">{video.label}</h2>
+                <p className="codepath-video-description">{video.description}</p>
+                </div>
+            ))}
             </div>
-          ))}
         </div>
-      </div>
-      <Footer />
+        <Footer />
     </>
   );
 };

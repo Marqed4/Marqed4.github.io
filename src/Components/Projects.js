@@ -9,6 +9,7 @@ import ProjectsActive from "../resources/art/projects page graphics/Projects Act
 import ExternalLinkButton from "../resources/art/projects page graphics/External Link Button.gif"
 import ExternalRepoButton from "../resources/art/projects page graphics/External Repo Button.gif"
 
+import DivaFFMPEGLogo from "../resources/art/diva ffmpeg page graphics/diva_icon.gif";
 import CalisighLogo from "../resources/art/calisigh page graphics/icon.png";
 import PopularVoteLogo from "../resources/art/popularvote page graphics/Favicon.png"
 import SudokuLogo from "../resources/art/sudoku page graphics/Favicon.png"
@@ -33,6 +34,14 @@ const ProjectsArray = [
     repository: "https://github.com/Marqed4/PopularVote",
     title: "PopularVote",
     description: "Private query session w/ AI forked clustering/condensing\n",
+  },
+  // Diva FFMPEG
+  {
+    id: 2,
+    logo: DivaFFMPEGLogo,
+    repository: "https://github.com/Marqed4/DivaFFMPEG",
+    title: "Diva FFMPEG",
+    description: "Beautiful multimedia control. \n Transforming ffmpeg's CLI into the Diva TUI experience.",
   },
   // Sudoku
   {
@@ -104,7 +113,7 @@ const Projects = () => {
 
                 {/* Project title, logo, and description */}
                 <a
-                  href={"/" + project.title}
+                  href={"/" + project.title.replace(/\s+/g, "")}
                   className="project-card"
                 >
                   <img

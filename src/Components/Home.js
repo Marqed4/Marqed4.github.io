@@ -43,6 +43,15 @@ const Home = () => {
         <Icon />
         <Navbar/>
         <img src={HomeBanner} alt="" className="home-banner-bg" />
+        <div className="home-banner-mirror-top" aria-hidden="true">
+          <img src={HomeBanner} alt="" />
+        </div>
+        <div className="home-banner-mirror-right" aria-hidden="true">
+          <img src={HomeBanner} alt="" />
+        </div>
+        <div className="home-banner-mirror-corner" aria-hidden="true">
+          <img src={HomeBanner} alt="" />
+        </div>
 
         <div className="home-content">
           <div className="home-card">
