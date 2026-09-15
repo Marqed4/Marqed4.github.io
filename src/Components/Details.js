@@ -30,7 +30,7 @@ const Details = () => {
   return (
     <>
       <div className="details-container">
-        <HomeIcon />
+        {/* <HomeIcon/> */}
         <Navbar/>
         <h1><img src={DetailsNavbarInactive} className="details-header" alt="Details" /></h1>
 

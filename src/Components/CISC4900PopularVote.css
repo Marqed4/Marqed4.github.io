@@ -1,0 +1,203 @@
+.cisc4900-container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.cisc4900-timelog-link {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 6px 16px;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+
+.cisc4900-timelog-link:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.cisc4900-name {
+  max-width: 90%;
+  height: auto;
+}
+
+.cisc4900-description {
+  font-weight: 225;
+  -webkit-text-stroke: 1px black;
+  margin: 4px 0;
+}
+
+.cisc4900-screens {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 40px;
+}
+
+.cisc4900-screenshot {
+  width: 320px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  object-fit: contain;
+}
+
+.cisc4900-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+}
+
+.cisc4900-layout-overview,
+.cisc4900-layout-features,
+.cisc4900-layout-architecture {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: left;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.cisc4900-layout-overview    { max-width: 340px; text-align: center; }
+.cisc4900-layout-features    { max-width: 340px; }
+.cisc4900-layout-architecture{ max-width: 300px; text-align: center; }
+
+.cisc4900-header-img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.cisc4900-body {
+  font-weight: 225;
+  -webkit-text-stroke: 1px black;
+}
+
+.cisc4900-body code {
+  font-family: 'Courier New', monospace;
+  -webkit-text-stroke: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+.cisc4900-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cisc4900-list li {
+  font-size: 0.85rem;
+  font-weight: 225;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  -webkit-text-stroke: 0.5px black;
+  padding-left: 14px;
+  position: relative;
+}
+
+.cisc4900-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+}
+
+.cisc4900-section-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-text-stroke: 1px black;
+  margin: 40px 0 16px 0;
+}
+
+.cisc4900-routes,
+.cisc4900-notes {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 40px 20px 40px;
+  text-align: left;
+}
+
+.cisc4900-route-group {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+  backdrop-filter: blur(4px);
+}
+
+.cisc4900-route-file {
+  font-family: 'Courier New', monospace;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0 0 2px 0;
+}
+
+.cisc4900-route-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  -webkit-text-stroke: 0.5px black;
+  margin: 0 0 10px 0;
+}
+
+.cisc4900-route-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cisc4900-route-list li {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.5;
+}
+
+@media (max-width: 1250px) {
+  .cisc4900-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cisc4900-layout-overview,
+  .cisc4900-layout-features,
+  .cisc4900-layout-architecture {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 770px) {
+  .cisc4900-screenshot {
+    width: 100%;
+  }
+}

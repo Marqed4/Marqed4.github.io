@@ -82,7 +82,7 @@ const TimeRabbit = () => {
           <p className="overview-body">
             <strong>TimeRabbit</strong> is a desktop stopwatch built entirely in <strong>Java Swing</strong>.<br /><br />
             A single <code>Stopwatch</code> class wires together the UI, a <code>javax.swing.Timer</code> firing every second,
-            and start/stop/reset logic — all packaged and shipped as a Windows installer.<br /><br />
+            and start/stop/reset logic - all packaged and shipped as a Windows installer.<br /><br />
             The background image and app icon are loaded from a <code>resources/</code> folder
             relative to the executable, so the app looks the same on any machine.
           </p>

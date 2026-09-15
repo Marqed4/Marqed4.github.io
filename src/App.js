@@ -62,6 +62,14 @@ import TimeRabbit from "./Components/TimeRabbit.js";
 import './Components/CodePath.css';
 import CodePath from "./Components/CodePath.js";
 
+// <---- PopularVote Time Log Page (url-only, no nav link) ---->
+import './Components/PopularVoteTimeLog.css';
+import PopularVoteTimeLog from "./Components/PopularVoteTimeLog.js";
+
+// <---- CISC 4900 PopularVote Page ---->
+import './Components/CISC4900PopularVote.css';
+import CISC4900PopularVote from "./Components/CISC4900PopularVote.js";
+
 import DefaultBackground from "./resources/art/Background Project/Gradients/Site.gif";
 
 const App = () => {
@@ -106,6 +114,8 @@ const App = () => {
           <Route path="/Sudoku" element={<Sudoku/>} />
           <Route path="/DivaFFMPEG" element={<DivaFFMPEG/>} />
           <Route path="/CodePath" element={<CodePath/>} />
+          <Route path="/4900-PopularVote-TimeLog" element={<PopularVoteTimeLog/>} />
+          <Route path="/CISC-4900-Popular-Vote" element={<CISC4900PopularVote/>} />
           <Route path="*" element={<UnfoundPage/>} />
         </Routes>
       </motion.div>

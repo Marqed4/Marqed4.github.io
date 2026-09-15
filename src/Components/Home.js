@@ -40,7 +40,7 @@ const Home = () => {
   return ( 
     <>
       <div className="home-container">
-        <Icon />
+        {/* <Icon/> */}
         <Navbar/>
         <img src={HomeBanner} alt="" className="home-banner-bg" />
         <div className="home-banner-mirror-top" aria-hidden="true">
