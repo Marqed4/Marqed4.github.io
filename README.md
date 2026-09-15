@@ -3,7 +3,4 @@
 <a href="https://marqed.it/">Live Website</a>
 
 • Programming  
-• Graphic Design  
-
-• Edits  
-• Shorts
+• Graphic Design
