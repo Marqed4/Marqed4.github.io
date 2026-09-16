@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import Navbar from "./Navbar.js"
 import Footer from "./Footer.jsx"
-import HomeIcon from "./Icon.js";
 import DetailsNavbarInactive from "../resources/art/details page graphic header/Details Navbar Inactive.gif"
 import ContactDetailsInactive from "../resources/art/details page graphic header/Contacts Details Inactive.gif"
 import EducationDetailsInactive from "../resources/art/details page graphic header/Education Details Inactive.gif"
@@ -30,7 +29,6 @@ const Details = () => {
   return (
     <>
       <div className="details-container">
-        {/* <HomeIcon/> */}
         <Navbar/>
         <h1><img src={DetailsNavbarInactive} className="details-header" alt="Details" /></h1>
 

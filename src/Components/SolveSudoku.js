@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navbar from "./Navbar.js";
 import "./SolveSudoku.css";
 
+import Sudoku from "../resources/art/sudoku page graphics/Sudoku.gif";
 import AppScreenshot from "../resources/art/sudoku page graphics/Screenshot_2026-06-21_092112.png";
 import UMLDiagram    from "../resources/art/sudoku page graphics/Screenshot_2026-06-21_034200.png";
 
@@ -56,7 +57,7 @@ const SolveSudoku = () => {
     <div className="solvesudoku-container">
       <Navbar />
 
-      <h1 className="solvesudoku-title">Sudoku</h1>
+      <img src={Sudoku} className="solvesudoku-title"></img>
 
       <p className="solvesudoku-description">Upload, generate, solve, or scan.</p>
       <p className="solvesudoku-description">

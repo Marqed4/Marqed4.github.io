@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Icon from "./Icon.js";
 import Navbar from "./Navbar.js";
 import "./PopularVoteTimeLog.css";
 
@@ -18,6 +17,22 @@ const LOG_START = "2026-08-31";
 // 4. Keep newest entries at the top of the array.
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
+{
+  date: "2026-09-16",
+  duration: 1,
+  category: "Thinking/Deciding",
+  description: "I took Prof. Chuang's advice and drafted an E2E encryption + client-side clustering plan for PopularVote to keep question/message content unreadable by the Flask server and Supabase. Phase 1: ephemeral X25519 keypairs per client (libsodium) exchanged over the existing" + 
+  "join-session socket event, with the host generating a symmetric room key and distributing it sealed to each participant's pubkey; server just relays opaque blobs. Phase 2: client encrypts questions with the room key before hitting /api/chat or /api/submissions;" + 
+  "Supabase stores ciphertext+nonce in the same schema. Phase 3: since Gemini can't see plaintext anymore, replace it for encrypted sessions with local clustering in the moderator's browser via @huggingface/transformers (Xenova/all-MiniLM-L6-v2, WebGPU with"  + 
+  "wasm fallback), doing cosine-similarity/k-means grouping client-side and broadcasting only the questionId- clusterId mapping back through the socket. Phase 4 covers model file hosting (HF CDN by default, or self-hosted static files on Render if needed)." +
+  "Phase 5 wires an `encrypted` flag into session creation (routes/sessions.py + schema) so the frontend picks crypto/clustering vs. normal Gemini path, surfaced as a toggle with a clustering-quality tradeoff note.",
+  challenges: "Had to reason through where encryption should live without breaking the existing Gemini clustering path for non-encrypted sessions, and figure out that Gemini simply can't be used at all once content" +
+  "is E2E encrypted, so client-side embedding/clustering has to fully replace it for that mode. Also had to work out clustering continuity given it only runs while a moderator's tab is open; settled on queuing questions and running a" +
+  "catch-up pass on reconnect instead of a server-side job, since the server never has plaintext to cluster with anyway.",
+  reflection: "Still undecided on three things before starting: opt-in-per-session vs. global encryption (leaning opt-in so unencrypted sessions keep full Gemini quality), TF-IDF vs. a local embedding model for clustering (embedding model is heavier" +
+  "but better quality), and whether to self-host model files on Render or just rely on the HF CDN. Key realization: none of the backend schema needs to change for this; Flask and Supabase just move from storing plaintext to storing structurally identical ciphertext," +
+  "which keeps the blast radius of this change smaller than expected.",
+},
   {
     date: "2026-09-14",
     duration: 3,
@@ -108,7 +123,6 @@ const PopularVoteTimeLog = () => {
 
   return (
     <div className="timelog-container">
-      <Icon />
       <Navbar />
 
       <div className="timelog-card">

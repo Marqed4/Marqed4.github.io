@@ -3,7 +3,7 @@ import Navbar from "./Navbar.js";
 import Footer from "./Footer.jsx";
 import "./DivaFFMPEG.css";
 
-import DivaIcon from "../resources/art/diva ffmpeg page graphics/diva_icon.gif";
+import Diva from "../resources/art/diva ffmpeg page graphics/Diva FFMPEG.gif";
 import Frontpage from "../resources/art/diva ffmpeg page graphics/frontpage.gif";
 import VideoTools from "../resources/art/diva ffmpeg page graphics/video_tools.gif";
 
@@ -63,14 +63,13 @@ const DivaFFMPEG = () => {
           rel="noopener noreferrer"
         >
           <img
-            src={DivaIcon}
+            src={Diva}
             className="diva-ffmpeg-icon"
             alt="DivaFFMPEG"
           />
         </a>
       </h1>
-
-      <p className="diva-ffmpeg-title">𝐷𝑖𝑣𝑎 𝐹𝐹𝑀𝑃𝐸𝐺</p>
+      
       <p className="diva-ffmpeg-description">A terminal UI wrapper around ffmpeg, because typing flags is beneath her.</p>
       <p className="diva-ffmpeg-description">Convert, compress, trim, and merge your video. Point, select, done.</p>
 
