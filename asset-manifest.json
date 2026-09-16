@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.65d966fc.css",
-    "main.js": "/static/js/main.4a7af836.js",
+    "main.css": "/static/css/main.5f5fddac.css",
+    "main.js": "/static/js/main.89d4b3b3.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -53,6 +53,7 @@
     "static/media/Show Edits Inactive.gif": "/static/media/Show Edits Inactive.68e44fd9296d2c48fdb0.gif",
     "static/media/IMG_1309.jpg": "/static/media/IMG_1309.09bb628bb4e10ac1628a.jpg",
     "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
+    "static/media/Diva FFMPEG.gif": "/static/media/Diva FFMPEG.8a8ff002c51378e1f8f1.gif",
     "static/media/Screenshot_2026-06-21_092112.png": "/static/media/Screenshot_2026-06-21_092112.b7be353e48800212073e.png",
     "static/media/Edits Navbar Inactive.gif": "/static/media/Edits Navbar Inactive.a1aaaa9f599096cd48fa.gif",
     "static/media/Editing Software Details Inactive.gif": "/static/media/Editing Software Details Inactive.b0e022715db76989a352.gif",
@@ -90,11 +91,11 @@
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.65d966fc.css.map": "/static/css/main.65d966fc.css.map",
-    "main.4a7af836.js.map": "/static/js/main.4a7af836.js.map"
+    "main.5f5fddac.css.map": "/static/css/main.5f5fddac.css.map",
+    "main.89d4b3b3.js.map": "/static/js/main.89d4b3b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.65d966fc.css",
-    "static/js/main.4a7af836.js"
+    "static/css/main.5f5fddac.css",
+    "static/js/main.89d4b3b3.js"
   ]
 }
