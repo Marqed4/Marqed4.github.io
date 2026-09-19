@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.467a068e.css",
-    "main.js": "/static/js/main.a235b033.js",
+    "main.css": "/static/css/main.aa240883.css",
+    "main.js": "/static/js/main.1b880329.js",
     "static/media/Orange Glob Marble.gif": "/static/media/Orange Glob Marble.a6abdb0fdedd9b46976a.gif",
     "static/media/Site.gif": "/static/media/Site.c78ea60fb3d2036cf57f.gif",
     "static/media/Music Off.gif": "/static/media/Music Off.29181053b175715be2a0.gif",
@@ -21,6 +21,7 @@
     "static/media/YouTube Active.gif": "/static/media/YouTube Active.e7542e1bf24637480aab.gif",
     "static/media/Orange Glob Marble Head.gif": "/static/media/Orange Glob Marble Head.d17b65c0a56acc38984c.gif",
     "static/media/Months View.png": "/static/media/Months View.6cf8019c2dc5f66e040e.png",
+    "static/media/IMG_0001.jpg": "/static/media/IMG_0001.b02a49cfc14e0aa0f6ea.jpg",
     "static/media/Spell.mp3": "/static/media/Spell.7bc833b9171e6bc39498.mp3",
     "static/media/Gospel.mp3": "/static/media/Gospel.8d14ae8c88bdb104dcc5.mp3",
     "static/media/Leni.mp3": "/static/media/Leni.cb37632fdd903dca91e1.mp3",
@@ -28,6 +29,7 @@
     "static/media/GitHub Inactive.gif": "/static/media/GitHub Inactive.4e4341157d2428fcd2e9.gif",
     "static/media/Home Inactive.gif": "/static/media/Home Inactive.a97b2094f17c52853608.gif",
     "static/media/Details Active.gif": "/static/media/Details Active.7c76448e4129d15f34f6.gif",
+    "static/media/IMG_0002.jpg": "/static/media/IMG_0002.11d1000fbdb394e8025e.jpg",
     "static/media/Details Inactive.gif": "/static/media/Details Inactive.9b1d58e04df8b9197752.gif",
     "static/media/video_tools.gif": "/static/media/video_tools.7e5de5ffce5fbb00b5b8.gif",
     "static/media/Years View.png": "/static/media/Years View.6da8a399201fda2487af.png",
@@ -53,6 +55,7 @@
     "static/media/Shorts Navbar Inactive.gif": "/static/media/Shorts Navbar Inactive.2235ceed25564ec83c16.gif",
     "static/media/Show Edits Inactive.gif": "/static/media/Show Edits Inactive.68e44fd9296d2c48fdb0.gif",
     "static/media/IMG_1309.jpg": "/static/media/IMG_1309.09bb628bb4e10ac1628a.jpg",
+    "static/media/IMG_1602.jpg": "/static/media/IMG_1602.7131ba62c6d0abaf5fc8.jpg",
     "static/media/Home Navbar Active.gif": "/static/media/Home Navbar Active.59b8cc3644798da634a0.gif",
     "static/media/Diva FFMPEG.gif": "/static/media/Diva FFMPEG.8a8ff002c51378e1f8f1.gif",
     "static/media/Screenshot_2026-06-21_092112.png": "/static/media/Screenshot_2026-06-21_092112.b7be353e48800212073e.png",
@@ -92,11 +95,11 @@
     "static/media/Event View.png": "/static/media/Event View.3cb7ff4cbc2588f35179.png",
     "static/media/SouthCrew-VGw2e.ttf": "/static/media/SouthCrew-VGw2e.01dce8bdae38c3987920.ttf",
     "index.html": "/index.html",
-    "main.467a068e.css.map": "/static/css/main.467a068e.css.map",
-    "main.a235b033.js.map": "/static/js/main.a235b033.js.map"
+    "main.aa240883.css.map": "/static/css/main.aa240883.css.map",
+    "main.1b880329.js.map": "/static/js/main.1b880329.js.map"
   },
   "entrypoints": [
-    "static/css/main.467a068e.css",
-    "static/js/main.a235b033.js"
+    "static/css/main.aa240883.css",
+    "static/js/main.1b880329.js"
   ]
 }
