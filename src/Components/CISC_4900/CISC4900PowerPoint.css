@@ -5,19 +5,19 @@
 }
 
 .cisc4900-ppt-title {
-  font-size: 1.4rem;
-  color: rgba(255, 255, 255, 0.9);
-  -webkit-text-stroke: 1px black;
-  margin-bottom: 16px;
+  transform: scaleX(-30px);
 }
 
 .cisc4900-ppt-download {
-  display: inline-block;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;

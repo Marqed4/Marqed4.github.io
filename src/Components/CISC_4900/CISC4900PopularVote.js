@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Navbar from "../Navbar.js";
 import "./CISC4900PopularVote.css";
 
-import PopularVote     from "../../resources/art/popularvote page graphics/Popular Vote.gif";
+import PopularVote     from "../../resources/art/popularvote page graphics/CISC-4900_PopularVote.gif";
 import MainPagePreview from "../../resources/art/popularvote page graphics/Main-Page-Theme-Preview.gif";
 import OpenSessionView from "../../resources/art/popularvote page graphics/open-session.gif";
 import HostsScrollDown from "../../resources/art/popularvote page graphics/Hosts-Scroll-Down.gif";
@@ -12,15 +12,15 @@ import Features     from "../../resources/art/Background Project/Gradients/Featu
 import Architecture from "../../resources/art/Background Project/Gradients/Architecture Inactive.gif";
 
 const deliverables = [
-  "Live, room-based Q&A - host opens a session and gets a 6-character room code participants join with",
-  "Anonymous question intake - rate-limited to 10/minute per IP via Flask-Limiter",
-  "AI clustering (Gemini) - groups semantically similar questions into 3-7 themed clusters",
-  "Incremental re-clustering - new submissions slot into existing clusters without disturbing ones the host already answered",
-  "RAG-style suggested answers - drafts a per-cluster answer grounded only in host-supplied notes or an uploaded PDF",
-  "Expansion flow - host can request 3-5 deeper follow-up questions per answered cluster plus fresh contextual facts",
-  "Live WebSocket sync - phase changes, headcounts, and clusters broadcast to every connected client via Flask-SocketIO",
-  "Session phase state machine - OPEN, CLOSED, CLUSTERING, RESULTS, EXPANDING, ENDED, DELETED, with rollback-on-failure transitions",
-  "Durable persistence - Postgres via Supabase as source of truth, rebuilt into an in-memory cache on boot via hydrate()",
+  { term: "Live, room-based Q&A", desc: "host opens a session and gets a 6-character room code participants join with" },
+  { term: "Anonymous question intake", desc: "rate-limited to 10/minute per IP via Flask-Limiter" },
+  { term: "AI clustering (Gemini)", desc: "groups semantically similar questions into 3-7 themed clusters" },
+  { term: "Incremental re-clustering", desc: "new submissions slot into existing clusters without disturbing ones the host already answered" },
+  { term: "RAG-style suggested answers", desc: "drafts a per-cluster answer grounded only in host-supplied notes or an uploaded PDF" },
+  { term: "Expansion flow", desc: "host can request 3-5 deeper follow-up questions per answered cluster plus fresh contextual facts" },
+  { term: "Live WebSocket sync", desc: "phase changes, headcounts, and clusters broadcast to every connected client via Flask-SocketIO" },
+  { term: "Session phase state machine", desc: "OPEN, CLOSED, CLUSTERING, RESULTS, EXPANDING, ENDED, DELETED, with rollback-on-failure transitions" },
+  { term: "Durable persistence", desc: "Postgres via Supabase as source of truth, rebuilt into an in-memory cache on boot via hydrate()" },
 ];
 
 const routeGroups = [
@@ -77,11 +77,11 @@ const CISC4900PopularVote = () => {
     <div className="cisc4900-container">
       <Navbar />
       <div className="cisc4900-PopularVote-external-links">
-        <a href="/4900-PopularVote-TimeLog" className="cisc4900-timelog-link">
+        <a href="/CISC-4900-PopularVote-TimeLog" className="cisc4900-timelog-link">
           View Time Log
         </a>
 
-        <a href="/4900-PopularVote-PowerPointPresentation" className="cisc4900-power-point">
+        <a href="/CISC-4900-PopularVote-PowerPointPresentation" className="cisc4900-power-point">
           Power Point
         </a>
       </div>
@@ -137,7 +137,7 @@ const CISC4900PopularVote = () => {
           </h2>
           <ul className="cisc4900-list">
             {deliverables.map((item, i) => (
-              <li key={i}>{item}</li>
+              <li key={i}><strong>{item.term}</strong> - {item.desc}</li>
             ))}
           </ul>
         </div>

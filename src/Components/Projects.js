@@ -40,7 +40,7 @@ const ProjectsArray = [
     id: 2,
     logo: PopularVoteLogo,
     repository: "https://github.com/Marqed4/CISC-4900-PopularVote",
-    title: "CISC-4900-Popular-Vote",
+    title: "CISC-4900-PopularVote",
     description: "CISC 4900 capstone build of PopularVote\n" +
     "Flask/SocketIO backend, Gemini clustering, and a full time log",
   },

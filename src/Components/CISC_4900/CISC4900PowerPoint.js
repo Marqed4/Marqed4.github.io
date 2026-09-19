@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { init } from "pptx-preview";
 import Navbar from "../Navbar.js";
 import "./CISC4900PowerPoint.css";
+import PV_PPTX from "../../resources/art/popularvote page graphics/CISC-4900_PopularVote_Power_Point.gif"
 
 const PPTX_URL = `${process.env.PUBLIC_URL}/documents/CISC-4900_PopularVote_Thirteenth_Draft_Dark.pptx`;
 
@@ -36,7 +37,7 @@ const CISC4900PowerPoint = () => {
     <div className="cisc4900-ppt-container">
       <Navbar />
 
-      <h1 className="cisc4900-ppt-title">CISC 4900 - PopularVote Presentation</h1>
+      <img src={PV_PPTX} className="cisc4900-ppt-title"/>
 
       <a className="cisc4900-ppt-download" href={PPTX_URL} download>
         Download .pptx

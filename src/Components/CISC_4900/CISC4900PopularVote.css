@@ -17,7 +17,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.85);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -36,7 +36,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.85);
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
@@ -134,7 +134,7 @@
 .cisc4900-list li {
   font-size: 0.85rem;
   font-weight: 225;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(0, 0, 0, 0.85);
   line-height: 1.5;
   -webkit-text-stroke: 0.5px black;
   padding-left: 14px;
@@ -152,7 +152,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   -webkit-text-stroke: 1px black;
   margin: 40px 0 16px 0;
 }
@@ -176,14 +176,14 @@
 .cisc4900-route-file {
   font-family: 'Courier New', monospace;
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(0, 0, 0, 0.55);
   margin: 0 0 2px 0;
 }
 
 .cisc4900-route-label {
   font-size: 0.8rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 0.9);
   -webkit-text-stroke: 0.5px black;
   margin: 0 0 10px 0;
 }
@@ -200,7 +200,7 @@
 .cisc4900-route-list li {
   font-family: 'Courier New', monospace;
   font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   line-height: 1.5;
 }
 

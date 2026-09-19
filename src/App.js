@@ -118,9 +118,9 @@ const App = () => {
           <Route path="/Sudoku" element={<Sudoku/>} />
           <Route path="/DivaFFMPEG" element={<DivaFFMPEG/>} />
           <Route path="/CodePath" element={<CodePath/>} />
-          <Route path="/4900-PopularVote-TimeLog" element={<PopularVoteTimeLog/>} />
-          <Route path="/4900-PopularVote-PowerPointPresentation" element={<CISC4900PowerPoint/>} />
-          <Route path="/CISC-4900-Popular-Vote" element={<CISC4900PopularVote/>} />
+          <Route path="/CISC-4900-PopularVote-TimeLog" element={<PopularVoteTimeLog/>} />
+          <Route path="/CISC-4900-PopularVote-PowerPointPresentation" element={<CISC4900PowerPoint/>} />
+          <Route path="/CISC-4900-PopularVote" element={<CISC4900PopularVote/>} />
           <Route path="*" element={<UnfoundPage/>} />
         </Routes>
       </motion.div>
