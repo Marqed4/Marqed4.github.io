@@ -13,6 +13,7 @@ const PetsArray = [
     { id: "IMG_0529", image: PetGallery.IMG_0528, description: "Like... two peas in a pod.\nMaggie & Lisa!"}, 
     { id: "IMG_1309", image: PetGallery.IMG_1309, description: "Debugging Cat!" },
     { id: "IMG_0987", image: PetGallery.IMG_0987, description: "Diva 💅" },
+    { id: "IMG_1844", image: PetGallery.IMG_1844, description: "Little Baby Heather" },
     { id: "IMG_1336", image: PetGallery.IMG_1336, description: "Great Company" },
     { id: "IMG_1213", image: PetGallery.IMG_1213, description: "off-guard flick" },
     { id: "IMG_1222", image: PetGallery.IMG_1222, description: "You mirin' brah? 😺" },
