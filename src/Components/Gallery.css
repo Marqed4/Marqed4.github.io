@@ -48,15 +48,24 @@
 }
 
 .img_0510.gallery-image {
-    height: 350px;
+  transform: translateX(15px);  
+  height: 360px;
 }
 
-.img_0529.gallery-image {
-    height: 235px;
+.img_0528.gallery-image {
+  height: 235px;
+}
+
+.img_1602.gallery-image {
+  height: 300px;
 }
 
 .img_1309.gallery-image {
   height: 310px;
+}
+
+.img_0001.gallery-image {
+  height: 360px;
 }
 
 .img_0987.gallery-image {
@@ -77,6 +86,10 @@
 
 .img_1336.gallery-image {
   height: 350px;
+}
+
+.img_0002.gallery-image {
+  height: 365px;
 }
 
 .gallery-gif {

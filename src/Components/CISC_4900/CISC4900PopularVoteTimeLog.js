@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Navbar from "./Navbar.js";
-import "./PopularVoteTimeLog.css";
+import Navbar from "../Navbar.js";
+import "./CISC4900PopularVoteTimeLog.css";
 
 // Fall 2026 semester (Brooklyn College): classes run Aug. 28 - Dec. 21, 2026.
 // Logging window starts 3 days in, on Aug. 31, 2026.
@@ -10,7 +10,7 @@ const SEMESTER_END = "2026-12-21";
 
 // How to add a new entry:
 // 1. Copy one of the objects below.
-// 2. date is "YYYY-MM-DD". duration is hours as a number (supports .5).
+// 2. date is "YYYY-MM-DD". duration is hours as a number (supports .5 time/decimal arithmetic)
 // 3. category should match one of: "Supervisor discussion", "Team discussion",
 //    "Design", "Coding", "Documentation", "Testing & Debugging",
 //    "Research, Training, Learning", "Other"
@@ -18,8 +18,15 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
+    date: "2026-09-19",
+    duration: 2,
+    category: "Coding",
+    description: "Used a typescript API to show a .pptx revelant to \"CISC-4900 Popular Vote\" Presentation on ",
+    challenges: "Black screen in frame, Frame duplication bug, clean no scroll-bar approach,",
+  },
+  {
     date: "2026-09-18",
-    duration: 3,
+    duration: 6,
     category: "Coding",
     description: "Implemented backend support for encrypted sessions: key-exchange socket events, an encrypted session flag, ciphertext passthrough on submissions, and a client-side cluster branch.",
     challenges: "Frontend lives in a separate repo, and with no migration file the encrypted column write had to be best-effort.",

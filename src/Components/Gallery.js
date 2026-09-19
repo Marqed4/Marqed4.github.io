@@ -10,13 +10,16 @@ import { PetGallery }  from "../resources/art/gallery page graphics/index.js";
 
 const PetsArray = [
     { id: "IMG_0510", image: PetGallery.IMG_0510, description: "Why is Maggie such a sassy gal!?"}, 
-    { id: "IMG_0529", image: PetGallery.IMG_0528, description: "Like... two peas in a pod.\nMaggie & Lisa!"}, 
+    { id: "IMG_0528", image: PetGallery.IMG_0528, description: "Like... two peas in a pod.\nMaggie & Lisa!"},
+    { id: "IMG_1602", image: PetGallery.IMG_1602, description: "Mythical Woman Kitty </3" },
     { id: "IMG_1309", image: PetGallery.IMG_1309, description: "Debugging Cat!" },
-    { id: "IMG_0987", image: PetGallery.IMG_0987, description: "Diva 💅" },
     { id: "IMG_1844", image: PetGallery.IMG_1844, description: "Little Baby Heather" },
-    { id: "IMG_1336", image: PetGallery.IMG_1336, description: "Great Company" },
+    { id: "IMG_0987", image: PetGallery.IMG_0987, description: "Diva 💅" },
     { id: "IMG_1213", image: PetGallery.IMG_1213, description: "off-guard flick" },
+    { id: "IMG_0001", image: PetGallery.IMG_0001, description: "eepy ;3" },
     { id: "IMG_1222", image: PetGallery.IMG_1222, description: "You mirin' brah? 😺" },
+    { id: "IMG_0002", image: PetGallery.IMG_0002, description: "Sqwishy" },
+    { id: "IMG_1336", image: PetGallery.IMG_1336, description: "Great Company" },
 ];
 
 // Each photo will contain it's own data (picture and description).

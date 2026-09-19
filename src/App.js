@@ -63,12 +63,16 @@ import './Components/CodePath.css';
 import CodePath from "./Components/CodePath.js";
 
 // <---- PopularVote Time Log Page (url-only, no nav link) ---->
-import './Components/PopularVoteTimeLog.css';
-import PopularVoteTimeLog from "./Components/PopularVoteTimeLog.js";
+import './Components/CISC_4900/CISC4900PopularVoteTimeLog.css';
+import PopularVoteTimeLog from "./Components/CISC_4900/CISC4900PopularVoteTimeLog.js";
 
 // <---- CISC 4900 PopularVote Page ---->
-import './Components/CISC4900PopularVote.css';
-import CISC4900PopularVote from "./Components/CISC4900PopularVote.js";
+import './Components/CISC_4900/CISC4900PopularVote.css';
+import CISC4900PopularVote from "./Components/CISC_4900/CISC4900PopularVote.js";
+
+// <---- CISC 4900 PopularVote PowerPoint Page (url-only, no nav link) ---->
+import './Components/CISC_4900/CISC4900PowerPoint.css';
+import CISC4900PowerPoint from "./Components/CISC_4900/CISC4900PowerPoint.js";
 
 import DefaultBackground from "./resources/art/Background Project/Gradients/Site.gif";
 
@@ -115,6 +119,7 @@ const App = () => {
           <Route path="/DivaFFMPEG" element={<DivaFFMPEG/>} />
           <Route path="/CodePath" element={<CodePath/>} />
           <Route path="/4900-PopularVote-TimeLog" element={<PopularVoteTimeLog/>} />
+          <Route path="/4900-PopularVote-PowerPointPresentation" element={<CISC4900PowerPoint/>} />
           <Route path="/CISC-4900-Popular-Vote" element={<CISC4900PopularVote/>} />
           <Route path="*" element={<UnfoundPage/>} />
         </Routes>

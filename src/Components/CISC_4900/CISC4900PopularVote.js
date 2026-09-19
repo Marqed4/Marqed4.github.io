@@ -1,15 +1,15 @@
 import { useEffect } from "react";
-import Navbar from "./Navbar.js";
+import Navbar from "../Navbar.js";
 import "./CISC4900PopularVote.css";
 
-import PopularVoteName from "../resources/art/popularvote page graphics/Popular Vote.gif";
-import MainPagePreview from "../resources/art/popularvote page graphics/Main-Page-Theme-Preview.gif";
-import OpenSessionView from "../resources/art/popularvote page graphics/open-session.gif";
-import HostsScrollDown from "../resources/art/popularvote page graphics/Hosts-Scroll-Down.gif";
+import PopularVote     from "../../resources/art/popularvote page graphics/Popular Vote.gif";
+import MainPagePreview from "../../resources/art/popularvote page graphics/Main-Page-Theme-Preview.gif";
+import OpenSessionView from "../../resources/art/popularvote page graphics/open-session.gif";
+import HostsScrollDown from "../../resources/art/popularvote page graphics/Hosts-Scroll-Down.gif";
 
-import Overview     from "../resources/art/Background Project/Gradients/Overview Inactive.gif";
-import Features     from "../resources/art/Background Project/Gradients/Features Inactive.gif";
-import Architecture from "../resources/art/Background Project/Gradients/Architecture Inactive.gif";
+import Overview     from "../../resources/art/Background Project/Gradients/Overview Inactive.gif";
+import Features     from "../../resources/art/Background Project/Gradients/Features Inactive.gif";
+import Architecture from "../../resources/art/Background Project/Gradients/Architecture Inactive.gif";
 
 const deliverables = [
   "Live, room-based Q&A - host opens a session and gets a 6-character room code participants join with",
@@ -76,10 +76,15 @@ const CISC4900PopularVote = () => {
   return (
     <div className="cisc4900-container">
       <Navbar />
+      <div className="cisc4900-PopularVote-external-links">
+        <a href="/4900-PopularVote-TimeLog" className="cisc4900-timelog-link">
+          View Time Log
+        </a>
 
-      <a href="/4900-PopularVote-TimeLog" className="cisc4900-timelog-link">
-        View Time Log
-      </a>
+        <a href="/4900-PopularVote-PowerPointPresentation" className="cisc4900-power-point">
+          Power Point
+        </a>
+      </div>
 
       <h1>
         <a
@@ -88,9 +93,9 @@ const CISC4900PopularVote = () => {
           rel="noopener noreferrer"
         >
           <img
-            src={PopularVoteName}
+            src={PopularVote}
             className="cisc4900-name"
-            alt="𝑃𝑜𝑝𝑢𝑙𝑎𝑟 𝑉𝑜𝑡𝑒"
+            alt="PopularVote"
           />
         </a>
       </h1>
