@@ -22,10 +22,9 @@
   text-align: center;
 }
 
-.timelog-title {
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
+.timelog-title-img {
+  max-width: 90%;
+  height: auto;
   margin-bottom: 4px;
 }
 

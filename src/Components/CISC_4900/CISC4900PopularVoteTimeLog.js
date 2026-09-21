@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Navbar from "../Navbar.js";
 import "./CISC4900PopularVoteTimeLog.css";
 
+import PopularVoteTimeLogTitle from "../../resources/art/popularvote page graphics/CISC-4900_PopularVote_Time_Log.gif";
+
 // Fall 2026 semester (Brooklyn College): classes run Aug. 28 - Dec. 21, 2026.
 // Logging window starts 3 days in, on Aug. 31, 2026.
 const LOG_START = "2026-08-31";
@@ -18,11 +20,18 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
+    "date": "2026-09-19",
+    "duration": 1,
+    "category": "Research",
+    "description": "Deepening my understanding of end-to-end encryption by watching a series of YouTube videos and reviewing real-world implementations to better grasp both the technology and its legal considerations.",
+    "challenges": "Integrating AI still requires users to rely on an open model provider such as `@huggingface/`, which makes the setup process more tedious and expensive than ideal."
+  },
+  {
     date: "2026-09-19",
     duration: 2,
     category: "Coding",
-    description: "Used a typescript API to show a .pptx revelant to \"CISC-4900 Popular Vote\" Presentation on ",
-    challenges: "Black screen in frame, Frame duplication bug, clean no scroll-bar approach,",
+    description: "Used a typescript API to show a .pptx revelant to \"CISC-4900 Popular Vote\" Presentation on HTML",
+    challenges: "Black screen in frame, Frame duplication bug, clean no scroll-bar approach. Fixed: `fetch(PPTX_URL).then((res) => res.arrayBuffer()).then((buffer) => {if (!cancelled) previewer.preview(buffer);});` duplicated buffer.",
   },
   {
     date: "2026-09-18",
@@ -108,7 +117,7 @@ const entries = [
     date: "2026-08-31",
     duration: 1,
     category: "Design",
-    description: "Reviewed the capstone rubric and sketched an initial system architecture for the PopularVote course build.",
+    description: "Reviewed the capstone rubric and sketched an initial system architecture for the PopularVote build (from over the summer).",
     challenges: "Deciding how much of the existing PopularVote product to reuse vs. rebuild for the course version.",
     reflection: "Settled on reusing the product's frontend and product-proven feature set, rebuilding the backend for the course.",
   },
@@ -142,7 +151,7 @@ const PopularVoteTimeLog = () => {
 
       <div className="timelog-card">
         <div className="timelog-header">
-          <h1 className="timelog-title">Popular Vote: Time Log</h1>
+          <img src={PopularVoteTimeLogTitle} className="timelog-title-img" alt="Popular Vote: Time Log" />
           <p className="timelog-tagline">CISC 4900 Capstone · Zachery Francis</p>
           <p className="timelog-tagline">
             <a
