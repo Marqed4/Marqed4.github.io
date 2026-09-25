@@ -20,11 +20,19 @@ const SEMESTER_END = "2026-12-21";
 // 5. Only log days that have actually happened - don't log ahead of today.
 const entries = [
   {
-    "date": "2026-09-19",
-    "duration": 1,
-    "category": "Research",
-    "description": "Deepening my understanding of end-to-end encryption by watching a series of YouTube videos and reviewing real-world implementations to better grasp both the technology and its legal considerations.",
-    "challenges": "Integrating AI still requires users to rely on an open model provider such as `@huggingface/`, which makes the setup process more tedious and expensive than ideal."
+    "date": "2026-09-25",
+    duration: 0.5,
+    category: "Creating kanban",
+    description: "Creating the project's kanban- adding issues and work in past/present/future stages of the project.",
+    challenges: "Remembering issues that were fixed without documentation.",
+    reflection: "This is a component that needed to be started at the time of the project's initializtion. Some work was documented inline and outside of the repsitory.",
+  },
+  {
+    date: "2026-09-19",
+    duration: 1,
+    category: "Research",
+    description: "Deepening my understanding of end-to-end encryption by watching a series of YouTube videos and reviewing real-world implementations to better grasp both the technology and its legal considerations.",
+    challenges: "Integrating AI still requires users to rely on an open model provider such as `@huggingface/`, which makes the setup process more tedious and expensive than ideal.",
   },
   {
     date: "2026-09-19",
